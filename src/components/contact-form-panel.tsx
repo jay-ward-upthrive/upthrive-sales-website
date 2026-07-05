@@ -9,49 +9,49 @@ type ContactFormPanelProps = {
 
 export function ContactFormPanel({ title, intro, submitLabel, helper }: ContactFormPanelProps) {
   return (
-    <section className="grid gap-6 lg:grid-cols-[1fr_0.92fr] lg:items-start">
-      <div className="rounded-[32px] border border-black/8 bg-white/72 p-6 shadow-[0_20px_60px_rgba(23,16,5,0.08)] backdrop-blur-xl lg:p-8">
+    <section className="grid gap-8 lg:grid-cols-[1fr_0.88fr] lg:items-start">
+      <div className="rounded-[28px] border border-black/8 bg-white/88 p-7 shadow-[0_14px_34px_rgba(23,16,5,0.06)] lg:p-9">
         <p className="kicker text-[#382A51]/68">Lead capture</p>
-        <h2 className="mt-4 font-heading text-[clamp(2.4rem,4vw,4.2rem)] leading-[0.96] text-[#000100]">{title}</h2>
+        <h2 className="mt-4 font-heading text-[clamp(2.3rem,4vw,3.8rem)] leading-[0.98] text-[#000100]">{title}</h2>
         <p className="mt-4 max-w-2xl text-base leading-8 text-[#000100]/72">{intro}</p>
 
         <form className="mt-8 grid gap-4">
           <div className="grid gap-4 sm:grid-cols-2">
             <label className="grid gap-2">
               <span className="text-sm font-semibold text-[#000100]">Name</span>
-              <input type="text" className="rounded-2xl border border-black/10 bg-[#fffdf1] px-4 py-3 text-sm text-[#000100]" placeholder="Your name" />
+              <input type="text" className="rounded-[18px] border border-black/10 bg-[#fffdf4] px-4 py-3 text-sm text-[#000100]" placeholder="Your name" />
             </label>
             <label className="grid gap-2">
               <span className="text-sm font-semibold text-[#000100]">Email</span>
-              <input type="email" className="rounded-2xl border border-black/10 bg-[#fffdf1] px-4 py-3 text-sm text-[#000100]" placeholder="you@agency.com" />
+              <input type="email" className="rounded-[18px] border border-black/10 bg-[#fffdf4] px-4 py-3 text-sm text-[#000100]" placeholder="you@agency.com" />
             </label>
           </div>
 
           <div className="grid gap-4 sm:grid-cols-2">
             <label className="grid gap-2">
               <span className="text-sm font-semibold text-[#000100]">Phone</span>
-              <input type="tel" className="rounded-2xl border border-black/10 bg-[#fffdf1] px-4 py-3 text-sm text-[#000100]" placeholder="Best number" />
+              <input type="tel" className="rounded-[18px] border border-black/10 bg-[#fffdf4] px-4 py-3 text-sm text-[#000100]" placeholder="Best number" />
             </label>
             <label className="grid gap-2">
               <span className="text-sm font-semibold text-[#000100]">Agency name</span>
-              <input type="text" className="rounded-2xl border border-black/10 bg-[#fffdf1] px-4 py-3 text-sm text-[#000100]" placeholder="Agency or company" />
+              <input type="text" className="rounded-[18px] border border-black/10 bg-[#fffdf4] px-4 py-3 text-sm text-[#000100]" placeholder="Agency or company" />
             </label>
           </div>
 
           <div className="grid gap-4 sm:grid-cols-2">
             <label className="grid gap-2">
               <span className="text-sm font-semibold text-[#000100]">Service interest</span>
-              <select className="rounded-2xl border border-black/10 bg-[#fffdf1] px-4 py-3 text-sm text-[#000100]">
+              <select className="rounded-[18px] border border-black/10 bg-[#fffdf4] px-4 py-3 text-sm text-[#000100]">
                 <option>Insurance leads</option>
                 <option>Recruiting campaigns</option>
                 <option>Appointment setting</option>
                 <option>Pricing and calculator</option>
-                <option>Full website build</option>
+                <option>Proof and trust support</option>
               </select>
             </label>
             <label className="grid gap-2">
               <span className="text-sm font-semibold text-[#000100]">Budget range</span>
-              <select className="rounded-2xl border border-black/10 bg-[#fffdf1] px-4 py-3 text-sm text-[#000100]">
+              <select className="rounded-[18px] border border-black/10 bg-[#fffdf4] px-4 py-3 text-sm text-[#000100]">
                 <option>Not sure yet</option>
                 <option>Under $2,500</option>
                 <option>$2,500 to $5,000</option>
@@ -63,12 +63,12 @@ export function ContactFormPanel({ title, intro, submitLabel, helper }: ContactF
 
           <label className="grid gap-2">
             <span className="text-sm font-semibold text-[#000100]">Target states</span>
-            <input type="text" className="rounded-2xl border border-black/10 bg-[#fffdf1] px-4 py-3 text-sm text-[#000100]" placeholder="Example: Texas, Florida, Georgia" />
+            <input type="text" className="rounded-[18px] border border-black/10 bg-[#fffdf4] px-4 py-3 text-sm text-[#000100]" placeholder="Example: Texas, Florida, Georgia" />
           </label>
 
           <label className="grid gap-2">
             <span className="text-sm font-semibold text-[#000100]">Notes and pain points</span>
-            <textarea className="min-h-36 rounded-2xl border border-black/10 bg-[#fffdf1] px-4 py-3 text-sm text-[#000100]" placeholder="What is not working today, what you want more of, and what the site needs to support" />
+            <textarea className="min-h-36 rounded-[18px] border border-black/10 bg-[#fffdf4] px-4 py-3 text-sm text-[#000100]" placeholder="What is not working today, what you want more of, and what the next step needs to support" />
           </label>
 
           <div className="flex flex-wrap gap-3 pt-2">
@@ -83,16 +83,16 @@ export function ContactFormPanel({ title, intro, submitLabel, helper }: ContactF
         </form>
       </div>
 
-      <aside className="rounded-[32px] border border-black/8 bg-[#000100] p-6 text-[#EFE9B8] shadow-[0_24px_70px_rgba(0,0,0,0.2)] lg:sticky lg:top-28 lg:p-8">
+      <aside className="rounded-[28px] border border-black/8 bg-[#000100] p-7 text-[#EFE9B8] shadow-[0_18px_44px_rgba(0,0,0,0.18)] lg:sticky lg:top-28 lg:p-9">
         <p className="kicker text-[#EFE9B8]/58">What this form is built to capture</p>
         <div className="mt-6 grid gap-3">
           {[
-            'Core lead details for routing and quote follow-up',
+            'Core lead details for routing and follow-up',
             'Service intent so the conversation starts in the right place',
             'Budget and geography to qualify fit earlier',
             'Pain points that shape the strategy call',
           ].map((item) => (
-            <div key={item} className="rounded-[24px] border border-white/10 bg-white/7 px-4 py-4 text-sm leading-7 text-[#EFE9B8]/78">
+            <div key={item} className="rounded-[20px] border border-white/10 bg-white/5 px-4 py-4 text-sm leading-7 text-[#EFE9B8]/76">
               {item}
             </div>
           ))}
