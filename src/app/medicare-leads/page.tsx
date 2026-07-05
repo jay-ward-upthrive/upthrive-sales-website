@@ -1,11 +1,5 @@
-import { ContentPage } from '@/components/content-page';
-import { pages } from '@/data/pages';
-
-export const metadata = {
-  title: pages['medicare-leads'].title,
-  description: pages['medicare-leads'].summary,
-};
+import { redirect } from 'next/navigation';
 
 export default function Page() {
-  return <ContentPage content={pages['medicare-leads']} />;
+  redirect('/services');
 }

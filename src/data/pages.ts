@@ -46,358 +46,282 @@ export type PageContent = {
 };
 
 export const pages: Record<string, PageContent> = {
-  home: {
-    slug: '/',
-    eyebrow: 'UpThrive website foundation',
-    title: 'Insurance lead generation, recruiting, and appointment setting for agents who want real pipeline.',
+  services: {
+    slug: '/services',
+    eyebrow: 'Sales-focused services',
+    title: 'What Upthrive builds for insurance agents who need more trust and more booked calls.',
     summary:
-      'UpThrive helps insurance agents and agency owners generate more opportunities, explain their offer clearly, and move visitors toward calls, quotes, and booked appointments.',
-    primaryCta: { label: 'Book a Call', href: '/book-a-call' },
-    secondaryCta: { label: 'View Pricing', href: '/pricing' },
+      'Upthrive does not start with SEO. We start with message clarity, credibility, conversion, and a website system that helps serious buyers take the next step.',
+    primaryCta: { label: 'Book a strategy call', href: '/book-a-call' },
+    secondaryCta: { label: 'See the homepage', href: '/' },
     sections: [
       {
         kind: 'cards',
-        title: 'What UpThrive will become',
-        description: 'The first production build is designed around the core revenue paths already in your brief.',
+        title: 'Core services',
+        description: 'Everything is built around trust, lead capture, and cleaner conversion.',
         items: [
-          { title: 'Insurance lead generation', text: 'Dedicated pages for each major lead type and buying intent.' },
-          { title: 'Recruiting campaigns', text: 'A clearer path for agency owners hiring licensed or aspiring agents.' },
-          { title: 'Appointment setting', text: 'A separate service page and future add-on for booked conversations.' },
-          { title: 'Pricing visibility', text: 'A polished lead calculator that can later connect to backend pricing rules.' },
+          {
+            title: 'Website strategy',
+            text: 'Positioning, offer clarity, and page architecture that help insurance buyers understand why they should trust you fast.',
+          },
+          {
+            title: 'Design that sells',
+            text: 'Premium visual systems that make your agency look established, credible, and worth contacting.',
+          },
+          {
+            title: 'Conversion systems',
+            text: 'Calls to action, section flow, booking paths, and page logic built to move traffic toward real conversations.',
+          },
+          {
+            title: 'Lead capture and follow-up',
+            text: 'Forms, routing, thank-you states, and follow-up touchpoints that reduce friction after the first click.',
+          },
+          {
+            title: 'SEO support',
+            text: 'Search visibility that supports the main sales system instead of acting like the whole strategy.',
+          },
         ],
       },
       {
         kind: 'list',
-        title: 'Home page structure',
-        description: 'The homepage should answer the buyer fast and move them toward a call or quote.',
+        title: 'What changes after launch',
+        description: 'The goal is not just a better homepage. It is a better sales impression.',
         items: [
-          'Hero with strong promise and CTA',
-          'Problem / solution section',
-          'Service highlights',
-          'Lead types and recruiting paths',
-          'Proof and testimonials',
-          'Compliance and replacement policy preview',
-          'Pricing / calculator CTA',
-          'FAQ and final conversion block',
+          'Your agency looks more credible above the fold',
+          'Visitors understand what you do faster',
+          'Calls to action feel clearer and easier to trust',
+          'Lead capture paths create less drop-off',
+          'The site supports calls instead of passively existing',
         ],
       },
       {
         kind: 'callout',
-        title: 'Build the site once, connect the systems later',
-        description:
-          'The structure is ready for Directus, lead capture, analytics, and checkout integration without redesigning the public site.',
-        ctaLabel: 'See the services structure',
-        ctaHref: '/services',
+        title: 'Need the website to work harder than it does now?',
+        description: 'Upthrive can turn a generic insurance website into a sharper sales system with clearer trust signals and cleaner booking paths.',
+        ctaLabel: 'Book a strategy call',
+        ctaHref: '/book-a-call',
       },
-    ],
-  },
-  services: {
-    slug: '/services',
-    eyebrow: 'Core offers',
-    title: 'Everything UpThrive sells, organized for insurance agents and agency owners.',
-    summary:
-      'This page acts as the main services hub and sends visitors into each dedicated commercial page for leads, recruiting, appointment setting, and pricing.',
-    primaryCta: { label: 'Explore lead types', href: '/insurance-leads' },
-    secondaryCta: { label: 'View recruiting', href: '/insurance-recruiting-leads' },
-    sections: [
-      {
-        kind: 'cards',
-        title: 'Primary offers',
-        items: [
-          { title: 'Insurance leads', text: 'Broad hub for final expense, mortgage protection, IUL, annuity, Medicare, ACA, and more.' },
-          { title: 'Recruiting leads', text: 'Positioned for agency growth and licensed-agent acquisition.' },
-          { title: 'Appointment setting', text: 'Separate service page with clear workflow and deliverables.' },
-          { title: 'Pricing calculator', text: 'A quote-first flow that reduces friction and sets expectations.' },
-        ],
-      },
-      {
-        kind: 'list',
-        title: 'Supporting trust pages',
-        items: ['Testimonials', 'Compliance', 'Replacement policy', 'About', 'Contact', 'Resources'],
-      },
-    ],
-  },
-  'insurance-leads': {
-    slug: '/insurance-leads',
-    eyebrow: 'Lead generation hub',
-    title: 'Insurance leads built for agents and agencies that need real pipeline, not recycled lists.',
-    summary:
-      'This is the broad commercial page for insurance agents who want cleaner lead flow, better fit, and a clearer buying path.',
-    primaryCta: { label: 'Calculate pricing', href: '/lead-calculator' },
-    secondaryCta: { label: 'View final expense leads', href: '/final-expense-leads' },
-    sections: [
-      {
-        kind: 'cards',
-        title: 'Lead types to support',
-        items: [
-          { title: 'Final expense', text: 'High-intent consumer demand with a dedicated page.' },
-          { title: 'Mortgage protection', text: 'Homeowner-focused traffic and buyer education.' },
-          { title: 'IUL', text: 'Suitability-aware messaging and qualification.' },
-          { title: 'Annuity', text: 'Retirement-focused demand with careful compliance language.' },
-          { title: 'Medicare', text: 'Seasonal and eligibility-aware page structure.' },
-          { title: 'ACA', text: 'Clear offer framing and eligibility context.' },
-        ],
-      },
-      {
-        kind: 'list',
-        title: 'Trust and differentiation',
-        items: [
-          'Exclusive vs shared lead clarity',
-          'Qualification and validation language',
-          'Replacement policy preview',
-          'Delivery expectations',
-          'CTA to pricing or call',
-        ],
-      },
-    ],
-  },
-  'final-expense-leads': {
-    slug: '/final-expense-leads',
-    eyebrow: 'Final expense SEO page',
-    title: 'Final expense leads with clear quality standards and replacement rules.',
-    summary:
-      'This page should rank and convert by explaining what the leads are, who they are for, and what makes them worth buying.',
-    primaryCta: { label: 'See pricing', href: '/pricing' },
-    secondaryCta: { label: 'Read replacement policy', href: '/replacement-policy' },
-    sections: [
-      { kind: 'list', title: 'What buyers care about', items: ['Lead quality', 'Area targeting', 'Exclusivity', 'Delivery speed', 'Replacement terms'] },
-      { kind: 'cards', title: 'Page sections', items: [
-        { title: 'Hero', text: 'Direct promise for final expense buyers.' },
-        { title: 'Qualification', text: 'Explain form data, validation, and targeting.' },
-        { title: 'Replacement policy', text: 'Show what is covered before purchase.' },
-        { title: 'FAQ', text: 'Handle objections without overselling.' },
-      ] },
-    ],
-  },
-  'mortgage-protection-leads': {
-    slug: '/mortgage-protection-leads',
-    eyebrow: 'Mortgage protection page',
-    title: 'Mortgage protection leads for homeowners and policy-fit conversations.',
-    summary: 'A focused page for mortgage protection intent, education, and buyer trust.',
-    primaryCta: { label: 'Book a call', href: '/book-a-call' },
-    secondaryCta: { label: 'View insurance leads', href: '/insurance-leads' },
-    sections: [
-      { kind: 'list', title: 'Important sections', items: ['Who these leads fit', 'Qualification flow', 'Lead delivery expectations', 'Common objections', 'FAQ'] },
-    ],
-  },
-  'iul-leads': {
-    slug: '/iul-leads',
-    eyebrow: 'IUL page',
-    title: 'IUL leads with suitability-aware messaging and a clear funnel.',
-    summary: 'The IUL page should feel premium, serious, and compliant.',
-    primaryCta: { label: 'View pricing', href: '/pricing' },
-    sections: [
-      { kind: 'list', title: 'Required sections', items: ['Suitability framing', 'Qualification', 'Education-based positioning', 'FAQ', 'CTA'] },
-    ],
-  },
-  'annuity-leads': {
-    slug: '/annuity-leads',
-    eyebrow: 'Annuity page',
-    title: 'Annuity leads for retirement-focused buyers.',
-    summary: 'This page should emphasize retirement context, qualification, and trust.',
-    primaryCta: { label: 'Calculate pricing', href: '/lead-calculator' },
-    sections: [
-      { kind: 'list', title: 'Required sections', items: ['Retirement-focused hero', 'Qualification requirements', 'Compliance-safe language', 'FAQ', 'CTA'] },
-    ],
-  },
-  'medicare-leads': {
-    slug: '/medicare-leads',
-    eyebrow: 'Medicare page',
-    title: 'Medicare leads with seasonal and eligibility-aware structure.',
-    summary: 'Use this page to address common Medicare buying concerns and conversion blockers.',
-    primaryCta: { label: 'Book a call', href: '/book-a-call' },
-    sections: [
-      { kind: 'list', title: 'Important sections', items: ['Lead type explanation', 'Qualification fields', 'Enrollment-period note', 'Compliance-safe language', 'FAQ'] },
-    ],
-  },
-  'aca-leads': {
-    slug: '/aca-leads',
-    eyebrow: 'ACA page',
-    title: 'ACA leads structured for clarity, qualification, and trust.',
-    summary: 'This page should make the offer and audience obvious quickly.',
-    primaryCta: { label: 'View pricing', href: '/pricing' },
-    sections: [
-      { kind: 'list', title: 'Important sections', items: ['Offer explanation', 'Qualification', 'Eligibility context', 'FAQ', 'CTA'] },
-    ],
-  },
-  'insurance-recruiting-leads': {
-    slug: '/insurance-recruiting-leads',
-    eyebrow: 'Recruiting funnel',
-    title: 'Insurance recruiting leads for agencies that want more licensed and aspiring agents.',
-    summary:
-      'This page is built for agency owners who need a cleaner recruiting funnel and want better-fit people to book calls.',
-    primaryCta: { label: 'Book recruiting call', href: '/book-a-call' },
-    secondaryCta: { label: 'View appointment setting', href: '/appointment-setting' },
-    sections: [
-      { kind: 'cards', title: 'Why it converts', items: [
-        { title: 'Clear audience', text: 'Agency owners know exactly who it is for.' },
-        { title: 'Simple next step', text: 'Visitors can book a call or request a plan.' },
-        { title: 'Sales support', text: 'Appointment setting can be layered in later.' },
-        { title: 'SEO intent', text: 'Built for commercial recruiting search terms.' },
-      ] },
-      { kind: 'list', title: 'Required sections', items: ['Hero', 'Candidate profile', 'Qualification', 'Funnel flow', 'FAQ', 'CTA'] },
-    ],
-  },
-  'appointment-setting': {
-    slug: '/appointment-setting',
-    eyebrow: 'Appointment setting',
-    title: 'Appointment setting that turns interest into booked conversations.',
-    summary: 'Sell appointment setting as its own service and as a future upsell.',
-    primaryCta: { label: 'Request a quote', href: '/lead-calculator' },
-    sections: [
-      { kind: 'list', title: 'What this page needs', items: ['What the setters do', 'Booking definition', 'Confirmation and follow-up', 'Show-rate language', 'FAQ'] },
-    ],
-  },
-  pricing: {
-    slug: '/pricing',
-    eyebrow: 'Pricing hub',
-    title: 'Pricing that starts with an estimate and pushes the right people to a call.',
-    summary: 'The calculator and pricing page should make expectations clear without burying the lead.',
-    primaryCta: { label: 'Open calculator', href: '/lead-calculator' },
-    secondaryCta: { label: 'Book a call', href: '/book-a-call' },
-    sections: [
-      { kind: 'cards', title: 'Pricing page goals', items: [
-        { title: 'Reduce friction', text: 'Give buyers enough clarity to keep moving.' },
-        { title: 'Qualify better', text: 'Filter people who are not a fit before a call.' },
-        { title: 'Future-proof', text: 'Centralize pricing rules later in a backend config or CMS.' },
-      ] },
-    ],
-  },
-  'lead-calculator': {
-    slug: '/lead-calculator',
-    eyebrow: 'Calculator shell',
-    title: 'A premium lead configurator, not a cramped dropdown form.',
-    summary: 'The structure is ready for a real pricing engine once rules are finalized.',
-    primaryCta: { label: 'Book after estimate', href: '/book-a-call' },
-    secondaryCta: { label: 'View pricing hub', href: '/pricing' },
-    sections: [
-      { kind: 'cards', title: 'Calculator experience', items: [
-        { title: 'Product cards', text: 'Use visual selections instead of a spreadsheet feel.' },
-        { title: 'Live summary', text: 'Show the estimate in a clean side panel or summary card.' },
-        { title: 'Mobile friendly', text: 'Keep the flow readable and simple on phones.' },
-        { title: 'Backend ready', text: 'Move pricing logic into a single source later.' },
-      ] },
-      { kind: 'list', title: 'Later calculation inputs', items: ['Lead type', 'Quantity', 'State', 'Add-ons', 'Plan duration', 'Discount rules'] },
     ],
   },
   testimonials: {
     slug: '/testimonials',
-    eyebrow: 'Proof page',
-    title: 'Testimonials and proof for insurance agents who want to see real results.',
-    summary: 'This page should be built from real proof and used to convert cautious insurance buyers.',
-    primaryCta: { label: 'Read compliance', href: '/compliance' },
+    eyebrow: 'Proof and trust',
+    title: 'Proof that helps insurance buyers believe the next step is worth taking.',
+    summary:
+      'Strong proof is not decoration. It lowers hesitation, builds confidence, and makes the call to action easier to trust.',
+    primaryCta: { label: 'Book a strategy call', href: '/book-a-call' },
     sections: [
-      { kind: 'list', title: 'Proof clusters', items: ['Video testimonials', 'Screenshots', 'Written quotes', 'Case-study style sections', 'CTA after each cluster'] },
-      { kind: 'callout', title: 'Only use real proof', description: 'Any example content here should be replaced with approved client proof before launch.', ctaLabel: 'Request a call', ctaHref: '/book-a-call' },
-    ],
-  },
-  compliance: {
-    slug: '/compliance',
-    eyebrow: 'Trust page',
-    title: 'Compliance-aware messaging that does not overpromise.',
-    summary: 'This page should answer objections about consent, records, and responsible delivery.',
-    primaryCta: { label: 'Read replacement policy', href: '/replacement-policy' },
-    sections: [
-      { kind: 'list', title: 'Required topics', items: ['TCPA-aware language', 'Opt-in capture', 'Delivery records', 'Client responsibilities', 'DNC position'] },
-    ],
-  },
-  'replacement-policy': {
-    slug: '/replacement-policy',
-    eyebrow: 'Policy page',
-    title: 'Replacement rules people can read before they buy.',
-    summary: 'Make the policy visible and simple so disputes are reduced later.',
-    primaryCta: { label: 'See pricing', href: '/pricing' },
-    sections: [
-      { kind: 'cards', title: 'Typical replaceable categories', items: [
-        { title: 'Invalid data', text: 'Wrong number, disconnected number, wrong state, incomplete lead.' },
-        { title: 'Targeting mismatch', text: 'Out of ordered geography or language mismatch if not ordered.' },
-        { title: 'Duplicates', text: 'Duplicate within the stated policy window.' },
-      ] },
+      {
+        kind: 'cards',
+        title: 'Proof formats that convert best',
+        items: [
+          { title: 'Short testimonials', text: 'Direct quotes about lead quality, trust, and booked calls.' },
+          { title: 'Before and after framing', text: 'Show the difference between a generic site and a sales-focused one.' },
+          { title: 'Credibility markers', text: 'Licensing, service areas, niche focus, and recognizable trust signals.' },
+        ],
+      },
+      {
+        kind: 'list',
+        title: 'What proof should communicate',
+        items: [
+          'The agency looks more established',
+          'The site creates better first impressions',
+          'Traffic turns into more serious conversations',
+          'Trust improves before the first call ever happens',
+        ],
+      },
     ],
   },
   about: {
     slug: '/about',
-    eyebrow: 'About UpThrive',
-    title: 'A grounded, founder-led partner for insurance agents and agencies.',
-    summary: 'The about page should humanize the brand without feeling generic or corporate.',
-    primaryCta: { label: 'Contact us', href: '/contact' },
+    eyebrow: 'About Upthrive',
+    title: 'Upthrive is a sales-focused marketing partner for insurance agents, not a generic agency.',
+    summary:
+      'The mission is simple: help insurance businesses look credible online, build trust faster, and turn more traffic into booked calls.',
+    primaryCta: { label: 'Book a strategy call', href: '/book-a-call' },
     sections: [
-      { kind: 'list', title: 'What the page should cover', items: ['Founder story', 'Why the company exists', 'How the team operates', 'What UpThrive believes about ethics and follow-up'] },
+      {
+        kind: 'list',
+        title: 'What Upthrive believes',
+        items: [
+          'A website should support sales, not just sit online',
+          'Trust has to be built before people ever talk to you',
+          'Clear structure beats vague agency language',
+          'Good design should make the next step feel easier',
+        ],
+      },
+      {
+        kind: 'callout',
+        title: 'This is for insurance businesses that want a stronger first impression and a cleaner path to contact.',
+        description: 'If traffic is reaching the site but not turning into enough conversations, the website has a conversion problem. That is the gap Upthrive is built to fix.',
+        ctaLabel: 'Book a strategy call',
+        ctaHref: '/book-a-call',
+      },
     ],
   },
   contact: {
     slug: '/contact',
-    eyebrow: 'Contact',
-    title: 'Short, simple contact path for insurance agents and agency owners.',
-    summary: 'Keep the form and call to action simple so the page converts cleanly.',
-    primaryCta: { label: 'Book a call', href: '/book-a-call' },
+    eyebrow: 'Contact Upthrive',
+    title: 'A simple contact path for insurance agents and agency owners who want a better website sales system.',
+    summary:
+      'Keep the first conversation focused on goals, trust gaps, and what the website needs to do better.',
+    primaryCta: { label: 'Book a strategy call', href: '/book-a-call' },
     sections: [
-      { kind: 'list', title: 'Suggested form fields', items: ['Name', 'Email', 'Phone', 'Agency name', 'Service interest', 'Budget range', 'Target states'] },
+      {
+        kind: 'list',
+        title: 'Best things to share',
+        items: [
+          'What your current site is not doing well',
+          'What kind of leads or calls you want more of',
+          'Where trust breaks down in your current funnel',
+          'What pages or systems already exist',
+        ],
+      },
     ],
   },
   'book-a-call': {
     slug: '/book-a-call',
-    eyebrow: 'Booking page',
-    title: 'Make booking the obvious next step for serious buyers.',
-    summary: 'This page can hold Calendly or a direct scheduler later.',
-    primaryCta: { label: 'Open scheduler', href: '/contact' },
+    eyebrow: 'Book a strategy call',
+    title: 'Book a strategy call and get clear on what your website needs to do better.',
+    summary:
+      'This page is where serious insurance agents and agency owners move from interest to a real conversation about trust, positioning, and conversion.',
+    primaryCta: { label: 'Book a strategy call', href: '/contact' },
     sections: [
-      { kind: 'list', title: 'Booking page requirements', items: ['Scheduler embed', 'Short qualification form', 'What to expect on the call', 'Service routing'] },
+      {
+        kind: 'cards',
+        title: 'What the call should cover',
+        items: [
+          { title: 'Current site reality', text: 'What the website looks like today and where it loses momentum.' },
+          { title: 'Trust gaps', text: 'Where buyers hesitate and what needs to change above the fold.' },
+          { title: 'Conversion priorities', text: 'What should happen before, during, and after the main call to action.' },
+        ],
+      },
+    ],
+  },
+  pricing: {
+    slug: '/pricing',
+    eyebrow: 'Scope and engagement',
+    title: 'Website scope should match the sales problem you are trying to solve.',
+    summary:
+      'Upthrive scopes around trust, conversion, and the supporting systems the site needs. That is more useful than forcing generic package language.',
+    primaryCta: { label: 'Book a strategy call', href: '/book-a-call' },
+    sections: [
+      {
+        kind: 'cards',
+        title: 'What affects scope',
+        items: [
+          { title: 'Page count', text: 'How much of the site needs to be rewritten, redesigned, or rebuilt.' },
+          { title: 'Offer clarity', text: 'How much message work is needed before design starts.' },
+          { title: 'Conversion system depth', text: 'Forms, routing, booking flow, and follow-up logic all change the scope.' },
+          { title: 'Support layers', text: 'SEO support, analytics, or content structure can be added after the core sales system is set.' },
+        ],
+      },
     ],
   },
   resources: {
     slug: '/resources',
     eyebrow: 'Resources',
-    title: 'A commercial SEO hub for blog posts and guides.',
-    summary: 'Use this page to organize future blog content into useful categories.',
-    primaryCta: { label: 'Read the blog', href: '/blog' },
+    title: 'Practical resources for insurance businesses that want better websites and better conversion.',
+    summary:
+      'Use this section for clear, useful content about trust, positioning, website conversion, and follow-up for insurance agents.',
+    primaryCta: { label: 'Book a strategy call', href: '/book-a-call' },
+    secondaryCta: { label: 'Read the blog', href: '/blog' },
     sections: [
-      { kind: 'cards', title: 'Initial categories', items: [
-        { title: 'Insurance lead generation', text: 'Lead quality, replacement policy, and performance.' },
-        { title: 'Recruiting agents', text: 'How to recruit and qualify better candidates.' },
-        { title: 'Appointment setting', text: 'How to move from lead to conversation.' },
-        { title: 'Compliance and TCPA', text: 'Trust, consent, and documentation.' },
-      ] },
+      {
+        kind: 'cards',
+        title: 'Suggested content pillars',
+        items: [
+          { title: 'Website conversion', text: 'How to turn visits into better calls and stronger first impressions.' },
+          { title: 'Trust building', text: 'How insurance agents can look more credible online.' },
+          { title: 'Offer clarity', text: 'How to explain products and services without sounding generic.' },
+          { title: 'Follow-up systems', text: 'How better next steps help more buyers actually book.' },
+        ],
+      },
     ],
   },
   blog: {
     slug: '/blog',
-    eyebrow: 'Blog index',
-    title: 'Blog structure ready for commercial SEO and thought leadership.',
-    summary: 'The blog should pull from CMS content later, but the routing is ready now.',
-    primaryCta: { label: 'See resources', href: '/resources' },
+    eyebrow: 'Blog',
+    title: 'A content hub for website trust, conversion, and lead follow-up in insurance.',
+    summary:
+      'The blog should support the sales story of the site with sharp, useful articles that answer buyer and agent questions clearly.',
+    primaryCta: { label: 'Book a strategy call', href: '/book-a-call' },
     sections: [
-      { kind: 'list', title: 'Starter topic buckets', items: ['Insurance Lead Generation', 'Final Expense Sales', 'Recruiting Agents', 'Appointment Setting', 'Compliance', 'Lead Follow-Up'] },
+      {
+        kind: 'list',
+        title: 'Starter topics',
+        items: [
+          'How to make an insurance website look more credible',
+          'What turns traffic into booked calls',
+          'Why generic websites hurt trust',
+          'How to improve the path from form submit to conversation',
+        ],
+      },
+    ],
+  },
+  compliance: {
+    slug: '/compliance',
+    eyebrow: 'Compliance',
+    title: 'A sales-focused website still needs clear, responsible compliance language.',
+    summary:
+      'Trust grows when the site is persuasive without becoming vague, reckless, or confusing about what happens next.',
+    primaryCta: { label: 'Book a strategy call', href: '/book-a-call' },
+    sections: [
+      {
+        kind: 'list',
+        title: 'What compliance content should do',
+        items: [
+          'Set realistic expectations',
+          'Clarify forms and consent language',
+          'Support a trustworthy buying experience',
+          'Help the agency look careful and credible',
+        ],
+      },
     ],
   },
   privacy: {
     slug: '/privacy-policy',
-    eyebrow: 'Legal',
-    title: 'Privacy policy page placeholder, ready for final legal text.',
-    summary: 'Keep this route in place now so legal copy can be inserted without changing the structure.',
-    primaryCta: { label: 'Terms', href: '/terms' },
+    eyebrow: 'Privacy policy',
+    title: 'Privacy policy placeholder ready for final legal copy.',
+    summary:
+      'This route is in place so launch structure stays complete while final privacy language is approved.',
+    primaryCta: { label: 'Book a strategy call', href: '/book-a-call' },
     sections: [
-      { kind: 'list', title: 'What to cover later', items: ['What data is collected', 'How it is used', 'Cookies', 'Third parties', 'User rights'] },
+      {
+        kind: 'list',
+        title: 'Topics to finalize',
+        items: ['What data is collected', 'How data is used', 'Third-party tools', 'User rights', 'Contact information'],
+      },
     ],
   },
   terms: {
     slug: '/terms',
-    eyebrow: 'Legal',
-    title: 'Terms page placeholder, ready for the final policy language.',
-    summary: 'This route is required for launch and should be replaced with legal review later.',
-    primaryCta: { label: 'Privacy policy', href: '/privacy-policy' },
+    eyebrow: 'Terms',
+    title: 'Terms placeholder ready for final legal copy.',
+    summary:
+      'This route can be replaced with approved legal language without changing the public site structure.',
+    primaryCta: { label: 'Book a strategy call', href: '/book-a-call' },
     sections: [
-      { kind: 'list', title: 'What to cover later', items: ['Service terms', 'User responsibilities', 'Disclaimers', 'Payment terms', 'Limitations'] },
+      {
+        kind: 'list',
+        title: 'Topics to finalize',
+        items: ['Service terms', 'Payment terms', 'Limitations', 'Disclaimers', 'User responsibilities'],
+      },
     ],
   },
   cookie: {
     slug: '/cookie-policy',
-    eyebrow: 'Legal',
-    title: 'Cookie policy placeholder, ready for consent wording later.',
-    summary: 'This route keeps the website complete before analytics or tracking are added.',
-    primaryCta: { label: 'Privacy policy', href: '/privacy-policy' },
+    eyebrow: 'Cookie policy',
+    title: 'Cookie policy placeholder ready for final consent language.',
+    summary:
+      'This route stays available now so the public site can launch cleanly and accept final policy text later.',
+    primaryCta: { label: 'Book a strategy call', href: '/book-a-call' },
     sections: [
-      { kind: 'list', title: 'What to cover later', items: ['Necessary cookies', 'Analytics cookies', 'Marketing cookies', 'Consent controls', 'How to change settings'] },
+      {
+        kind: 'list',
+        title: 'Topics to finalize',
+        items: ['Necessary cookies', 'Analytics cookies', 'Marketing cookies', 'Consent controls', 'How to change settings'],
+      },
     ],
   },
 };
@@ -405,25 +329,14 @@ export const pages: Record<string, PageContent> = {
 export const routeOrder = [
   '/',
   '/services',
-  '/insurance-leads',
-  '/final-expense-leads',
-  '/mortgage-protection-leads',
-  '/iul-leads',
-  '/annuity-leads',
-  '/medicare-leads',
-  '/aca-leads',
-  '/insurance-recruiting-leads',
-  '/appointment-setting',
-  '/pricing',
-  '/lead-calculator',
   '/testimonials',
-  '/compliance',
-  '/replacement-policy',
   '/about',
-  '/contact',
-  '/book-a-call',
+  '/pricing',
   '/resources',
   '/blog',
+  '/contact',
+  '/book-a-call',
+  '/compliance',
   '/privacy-policy',
   '/terms',
   '/cookie-policy',

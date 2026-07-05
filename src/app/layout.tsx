@@ -1,26 +1,35 @@
 import type { Metadata } from 'next';
-import { Manrope, Sora } from 'next/font/google';
+import { Archivo_Narrow, Inter } from 'next/font/google';
 import './globals.css';
 import { SiteShell } from '@/components/site-shell';
 import { site } from '@/data/site';
 
-const bodyFont = Manrope({ subsets: ['latin'], variable: '--font-body' });
-const headingFont = Sora({ subsets: ['latin'], variable: '--font-heading' });
+const bodyFont = Inter({ subsets: ['latin'], variable: '--font-body' });
+const headingFont = Archivo_Narrow({
+  subsets: ['latin'],
+  weight: ['400', '500', '600', '700'],
+  variable: '--font-heading',
+});
 
 export const metadata: Metadata = {
   metadataBase: new URL(site.siteUrl),
   title: {
-    default: 'UpThrive',
-    template: '%s | UpThrive',
+    default: 'Upthrive',
+    template: '%s | Upthrive',
   },
   description: site.description,
-  applicationName: 'UpThrive',
+  applicationName: 'Upthrive',
   openGraph: {
-    title: 'UpThrive',
+    title: 'Upthrive',
     description: site.description,
     url: site.siteUrl,
-    siteName: 'UpThrive',
+    siteName: 'Upthrive',
     type: 'website',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Upthrive',
+    description: site.description,
   },
 };
 

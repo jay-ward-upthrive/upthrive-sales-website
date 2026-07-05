@@ -4,20 +4,22 @@ import { site } from '@/data/site';
 
 export function SiteShell({ children }: { children: ReactNode }) {
   return (
-    <div className="min-h-screen bg-[radial-gradient(circle_at_top,_rgba(245,123,5,0.18),_transparent_28%),radial-gradient(circle_at_right,_rgba(5,120,198,0.12),_transparent_26%),linear-gradient(180deg,#f8f7f2_0%,#f3efe2_100%)] text-[#000100]">
-      <header className="sticky top-0 z-50 border-b border-black/8 bg-white/75 backdrop-blur-xl">
-        <div className="mx-auto flex max-w-7xl items-center justify-between gap-4 px-6 py-4 lg:px-8">
-          <Link href="/" className="flex items-center gap-3 font-semibold tracking-wide">
-            <span className="grid h-10 w-10 place-items-center rounded-xl bg-[#000100] text-sm text-[#EFE9B8] shadow-lg shadow-[#000100]/20">
+    <div className="min-h-[100dvh] text-[#000100]">
+      <header className="sticky top-0 z-50 border-b border-black/8 bg-[#efe9b8]/88 backdrop-blur-xl">
+        <div className="section-shell flex h-[72px] items-center justify-between gap-4">
+          <Link href="/" className="flex items-center gap-3">
+            <span className="grid h-11 w-11 place-items-center rounded-2xl bg-[#000100] text-sm font-bold text-[#efe9b8] shadow-[0_14px_34px_rgba(0,1,0,0.18)]">
               U
             </span>
             <span className="leading-tight">
-              <span className="block text-xs uppercase tracking-[0.35em] text-[#382A51]/70">UpThrive</span>
-              <span className="block text-sm text-[#000100]/70">For insurance agents & agencies</span>
+              <span className="block font-heading text-[1.35rem] leading-none text-[#000100]">Upthrive</span>
+              <span className="block text-[0.7rem] font-semibold uppercase tracking-[0.18em] text-[#382a51]/72">
+                Websites that sell for insurance agents
+              </span>
             </span>
           </Link>
 
-          <nav className="hidden items-center gap-6 text-sm text-[#000100]/75 lg:flex">
+          <nav className="hidden items-center gap-7 text-sm font-medium text-[#000100]/74 lg:flex">
             {site.navigation.map((item) => (
               <Link key={item.href} href={item.href} className="transition hover:text-[#000100]">
                 {item.label}
@@ -25,32 +27,27 @@ export function SiteShell({ children }: { children: ReactNode }) {
             ))}
           </nav>
 
-          <div className="flex items-center gap-3">
-            <Link
-              href="/book-a-call"
-              className="rounded-full bg-[#000100] px-5 py-2.5 text-sm font-medium text-[#EFE9B8] shadow-lg shadow-[#000100]/15 transition hover:-translate-y-0.5 hover:bg-[#382A51]"
-            >
-              Book a Call
-            </Link>
-          </div>
+          <Link href={site.primaryCta.href} className="light-button px-4 py-2.5 text-sm lg:px-5">
+            {site.primaryCta.label}
+          </Link>
         </div>
       </header>
 
       <main>{children}</main>
 
-      <footer className="border-t border-black/10 bg-[#000100] text-[#EFE9B8]">
-        <div className="mx-auto grid max-w-7xl gap-10 px-6 py-14 lg:grid-cols-[1.4fr_1fr_1fr] lg:px-8">
+      <footer className="border-t border-white/8 bg-[#000100] text-[#efe9b8]">
+        <div className="section-shell grid gap-10 py-14 lg:grid-cols-[1.2fr_0.9fr_0.9fr]">
           <div>
-            <p className="text-xs uppercase tracking-[0.35em] text-[#EFE9B8]/60">UpThrive</p>
-            <h2 className="mt-3 text-2xl font-semibold">Insurance growth systems built to convert.</h2>
-            <p className="mt-4 max-w-xl text-sm leading-7 text-[#EFE9B8]/78">
-              This site structure is ready for Directus, SEO pages, calculator logic, and the future CRM and portal pieces for insurance agents and agencies.
+            <p className="kicker text-[#efe9b8]/58">Upthrive</p>
+            <h2 className="mt-4 max-w-lg text-4xl leading-[0.98]">Turn your website into a better sales conversation.</h2>
+            <p className="mt-4 max-w-xl text-sm leading-7 text-[#efe9b8]/76">
+              Upthrive helps insurance agents and agency owners build trust online, generate better leads, and turn more traffic into booked calls.
             </p>
           </div>
 
           <div>
-            <h3 className="text-sm font-semibold uppercase tracking-[0.25em] text-[#EFE9B8]/65">Quick links</h3>
-            <ul className="mt-4 space-y-2 text-sm text-[#EFE9B8]/80">
+            <h3 className="kicker text-[#efe9b8]/58">Navigate</h3>
+            <ul className="mt-5 space-y-3 text-sm text-[#efe9b8]/82">
               {site.footerLinks.map((item) => (
                 <li key={item.href}>
                   <Link href={item.href} className="transition hover:text-white">
@@ -62,8 +59,8 @@ export function SiteShell({ children }: { children: ReactNode }) {
           </div>
 
           <div>
-            <h3 className="text-sm font-semibold uppercase tracking-[0.25em] text-[#EFE9B8]/65">Trust points</h3>
-            <ul className="mt-4 space-y-2 text-sm text-[#EFE9B8]/80">
+            <h3 className="kicker text-[#efe9b8]/58">What the site is built around</h3>
+            <ul className="mt-5 space-y-3 text-sm leading-7 text-[#efe9b8]/82">
               {site.trustPoints.map((item) => (
                 <li key={item}>{item}</li>
               ))}

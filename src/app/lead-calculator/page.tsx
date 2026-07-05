@@ -1,11 +1,5 @@
-import { ContentPage } from '@/components/content-page';
-import { pages } from '@/data/pages';
-
-export const metadata = {
-  title: pages['lead-calculator'].title,
-  description: pages['lead-calculator'].summary,
-};
+import { redirect } from 'next/navigation';
 
 export default function Page() {
-  return <ContentPage content={pages['lead-calculator']} />;
+  redirect('/book-a-call');
 }
