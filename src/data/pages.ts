@@ -49,9 +49,9 @@ export const pages: Record<string, PageContent> = {
   home: {
     slug: '/',
     eyebrow: 'UpThrive website foundation',
-    title: 'A serious growth platform for insurance leads, recruiting, and conversion.',
+    title: 'Insurance lead generation, recruiting, and appointment setting for agents who want real pipeline.',
     summary:
-      'This site is structured to sell UpThrive clearly, rank for commercial search terms, and stay easy to expand as CMS content, calculators, and automation are added.',
+      'UpThrive helps insurance agents and agency owners generate more opportunities, explain their offer clearly, and move visitors toward calls, quotes, and booked appointments.',
     primaryCta: { label: 'Book a Call', href: '/book-a-call' },
     secondaryCta: { label: 'View Pricing', href: '/pricing' },
     sections: [
@@ -94,9 +94,9 @@ export const pages: Record<string, PageContent> = {
   services: {
     slug: '/services',
     eyebrow: 'Core offers',
-    title: 'Everything UpThrive sells, organized clearly.',
+    title: 'Everything UpThrive sells, organized for insurance agents and agency owners.',
     summary:
-      'This page acts as the main services hub and sends visitors into each dedicated commercial page.',
+      'This page acts as the main services hub and sends visitors into each dedicated commercial page for leads, recruiting, appointment setting, and pricing.',
     primaryCta: { label: 'Explore lead types', href: '/insurance-leads' },
     secondaryCta: { label: 'View recruiting', href: '/insurance-recruiting-leads' },
     sections: [
@@ -120,9 +120,9 @@ export const pages: Record<string, PageContent> = {
   'insurance-leads': {
     slug: '/insurance-leads',
     eyebrow: 'Lead generation hub',
-    title: 'Insurance leads built for real pipeline, not recycled lists.',
+    title: 'Insurance leads built for agents and agencies that need real pipeline, not recycled lists.',
     summary:
-      'This is the broad commercial page that supports the individual lead-type pages and the insurance lead generation search silo.',
+      'This is the broad commercial page for insurance agents who want cleaner lead flow, better fit, and a clearer buying path.',
     primaryCta: { label: 'Calculate pricing', href: '/lead-calculator' },
     secondaryCta: { label: 'View final expense leads', href: '/final-expense-leads' },
     sections: [
@@ -223,9 +223,9 @@ export const pages: Record<string, PageContent> = {
   'insurance-recruiting-leads': {
     slug: '/insurance-recruiting-leads',
     eyebrow: 'Recruiting funnel',
-    title: 'Insurance recruiting leads for agencies that need more licensed and aspiring agents.',
+    title: 'Insurance recruiting leads for agencies that want more licensed and aspiring agents.',
     summary:
-      'This is one of the strongest commercial pages in the structure and should sit at the center of the recruiting silo.',
+      'This page is built for agency owners who need a cleaner recruiting funnel and want better-fit people to book calls.',
     primaryCta: { label: 'Book recruiting call', href: '/book-a-call' },
     secondaryCta: { label: 'View appointment setting', href: '/appointment-setting' },
     sections: [
@@ -283,8 +283,8 @@ export const pages: Record<string, PageContent> = {
   testimonials: {
     slug: '/testimonials',
     eyebrow: 'Proof page',
-    title: 'Testimonials and proof for skeptical buyers.',
-    summary: 'This page should be built from real proof and used to convert cautious prospects.',
+    title: 'Testimonials and proof for insurance agents who want to see real results.',
+    summary: 'This page should be built from real proof and used to convert cautious insurance buyers.',
     primaryCta: { label: 'Read compliance', href: '/compliance' },
     sections: [
       { kind: 'list', title: 'Proof clusters', items: ['Video testimonials', 'Screenshots', 'Written quotes', 'Case-study style sections', 'CTA after each cluster'] },
@@ -318,7 +318,7 @@ export const pages: Record<string, PageContent> = {
   about: {
     slug: '/about',
     eyebrow: 'About UpThrive',
-    title: 'A grounded, founder-led growth partner for insurance businesses.',
+    title: 'A grounded, founder-led partner for insurance agents and agencies.',
     summary: 'The about page should humanize the brand without feeling generic or corporate.',
     primaryCta: { label: 'Contact us', href: '/contact' },
     sections: [
@@ -328,7 +328,7 @@ export const pages: Record<string, PageContent> = {
   contact: {
     slug: '/contact',
     eyebrow: 'Contact',
-    title: 'Short, simple contact path with room for qualification later.',
+    title: 'Short, simple contact path for insurance agents and agency owners.',
     summary: 'Keep the form and call to action simple so the page converts cleanly.',
     primaryCta: { label: 'Book a call', href: '/book-a-call' },
     sections: [

@@ -13,7 +13,7 @@ export function SiteShell({ children }: { children: ReactNode }) {
             </span>
             <span className="leading-tight">
               <span className="block text-xs uppercase tracking-[0.35em] text-[#382A51]/70">UpThrive</span>
-              <span className="block text-sm text-[#000100]/70">Insurance growth systems</span>
+              <span className="block text-sm text-[#000100]/70">For insurance agents & agencies</span>
             </span>
           </Link>
 
@@ -44,7 +44,7 @@ export function SiteShell({ children }: { children: ReactNode }) {
             <p className="text-xs uppercase tracking-[0.35em] text-[#EFE9B8]/60">UpThrive</p>
             <h2 className="mt-3 text-2xl font-semibold">Insurance growth systems built to convert.</h2>
             <p className="mt-4 max-w-xl text-sm leading-7 text-[#EFE9B8]/78">
-              This site structure is ready for Directus, SEO pages, calculator logic, and the future CRM and portal pieces.
+              This site structure is ready for Directus, SEO pages, calculator logic, and the future CRM and portal pieces for insurance agents and agencies.
             </p>
           </div>
 

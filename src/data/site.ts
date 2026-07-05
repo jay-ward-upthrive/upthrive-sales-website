@@ -2,7 +2,7 @@ export const site = {
   name: 'UpThrive',
   slogan: 'Insurance growth systems for agents and agencies',
   description:
-    'UpThrive helps insurance businesses grow with exclusive leads, recruiting campaigns, appointment setting, pricing clarity, and conversion systems.',
+    'UpThrive helps insurance agents and agency owners get more pipeline with exclusive leads, recruiting campaigns, appointment setting, and clearer pricing and follow-up systems.',
   siteUrl: process.env.NEXT_PUBLIC_SITE_URL || 'https://upthrive-solutions.com',
   navigation: [
     { label: 'Services', href: '/services' },
