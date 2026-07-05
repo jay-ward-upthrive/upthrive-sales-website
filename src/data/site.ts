@@ -1,8 +1,8 @@
 export const site = {
   name: 'Upthrive',
-  slogan: 'Premium SEO-first websites for insurance growth',
+  slogan: 'Insurance growth for agents and agencies',
   description:
-    'Upthrive builds premium SEO-first websites, lead generation pages, recruiting funnels, pricing experiences, and trust systems for insurance agents and agency owners.',
+    'Upthrive helps insurance agents and agency owners generate more leads, attract better candidates, book more conversations, and build more trust with serious buyers.',
   siteUrl: process.env.NEXT_PUBLIC_SITE_URL || 'https://upthrive-solutions.com',
   primaryCta: { label: 'Book a strategy call', href: '/book-a-call' },
   navigation: [
@@ -25,9 +25,9 @@ export const site = {
     { label: 'Terms', href: '/terms' },
   ],
   trustPoints: [
-    'SEO-first structure with conversion-focused page design',
-    'Lead generation, recruiting, appointment setting, and pricing flows',
-    'Future-ready content model for CMS editing and expansion',
-    'Ready for analytics, forms, tracking, and automation later',
+    'Insurance lead generation and recruiting support',
+    'Appointment setting and pricing visibility',
+    'Proof, compliance, and trust-building content',
+    'Ready for forms, tracking, and future automation',
   ],
 } as const;

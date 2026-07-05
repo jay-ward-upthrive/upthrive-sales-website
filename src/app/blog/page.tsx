@@ -3,9 +3,9 @@ import { posts } from '@/data/posts';
 import { Reveal } from '@/components/reveal';
 
 export const metadata = {
-  title: 'Upthrive blog and SEO resources',
+  title: 'Upthrive resources',
   description:
-    'SEO-friendly content for insurance lead generation, recruiting campaigns, pricing visibility, trust-building, and appointment-setting strategy.',
+    'Useful content for insurance lead generation, recruiting campaigns, appointment setting, pricing visibility, and stronger sales conversations.',
 };
 
 export default function Page() {
@@ -14,12 +14,12 @@ export default function Page() {
       <section className="home-section">
         <div className="section-shell">
           <Reveal>
-            <p className="kicker text-[#382A51]/68">Blog and SEO content</p>
+            <p className="kicker text-[#382A51]/68">Blog and resources</p>
             <h1 className="mt-4 max-w-4xl font-heading text-[clamp(3rem,5vw,5.4rem)] leading-[0.95] text-[#000100]">
-              Content that supports ranking, trust, and better sales conversations.
+              Content that helps buyers trust the offer and sales teams move faster.
             </h1>
             <p className="mt-5 max-w-2xl text-base leading-8 text-[#000100]/72 sm:text-lg">
-              The blog is part of the Upthrive sales system. Each post should support SEO, answer real buyer questions, and connect visitors back into service pages, pricing, proof, or contact paths.
+              The resource hub supports lead generation, recruiting, appointment setting, pricing visibility, and stronger buyer confidence across the rest of the system.
             </p>
           </Reveal>
 

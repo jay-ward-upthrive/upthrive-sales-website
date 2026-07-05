@@ -49,133 +49,126 @@ export const pages: Record<string, PageContent> = {
   services: {
     slug: '/services',
     eyebrow: 'Core offers',
-    title: 'The main Upthrive offers, structured for insurance agents who need more leads, more trust, and more booked calls.',
+    title: 'The main Upthrive offers for insurance businesses that need more leads, more trust, and more booked calls.',
     summary:
-      'Upthrive is not a generic brochure agency. It is a premium SEO-first sales and content system built around lead generation, recruiting, appointment setting, pricing visibility, and trust-building.',
+      'Upthrive is positioned around insurance lead generation, recruiting campaigns, appointment setting, pricing visibility, proof, and stronger sales conversations.',
     primaryCta: { label: 'Book a strategy call', href: '/book-a-call' },
     secondaryCta: { label: 'View pricing', href: '/pricing' },
     sections: [
       {
         kind: 'cards',
         title: 'What Upthrive helps with',
-        description: 'Each service is meant to support a stronger sales conversation, not just a nicer website.',
         items: [
-          { title: 'Insurance lead generation', text: 'SEO-first service pages and lead funnels that help visitors understand your offer fast and move toward inquiry.' },
-          { title: 'Recruiting campaigns', text: 'Dedicated recruiting pages for agency owners who need more candidate flow and better-fit applicants.' },
-          { title: 'Appointment setting', text: 'Clear positioning for booked-call support and recruiting appointment workflows.' },
-          { title: 'Pricing visibility', text: 'A stronger pricing and calculator experience that helps buyers self-qualify and keep moving.' },
-          { title: 'Proof and trust systems', text: 'Testimonials, case-study structure, proof blocks, and better credibility markers.' },
-          { title: 'Blog and resource content', text: 'A future-ready SEO content hub that supports service pages and commercial search intent.' },
+          { title: 'Insurance lead generation', text: 'Clear lead offers for final expense, mortgage protection, IUL, annuity, Medicare, ACA, life, and exclusive lead demand.' },
+          { title: 'Recruiting campaigns', text: 'Recruiting pages and offers for agency growth, 1099 recruiting, and better candidate flow.' },
+          { title: 'Appointment setting', text: 'Booked-call support that helps turn interest into real sales or recruiting conversations.' },
+          { title: 'Pricing visibility', text: 'Stronger pricing pages and estimate flows that help buyers self-qualify faster.' },
+          { title: 'Proof and trust', text: 'Testimonials, screenshot proof, compliance pages, and credibility systems that reduce skepticism.' },
+          { title: 'Resources and content', text: 'Blog and resource structure that supports trust, education, and future content growth.' },
         ],
       },
       {
         kind: 'list',
-        title: 'What the site is built to support later',
+        title: 'What the system supports later',
         items: [
-          'CMS-driven editing for pages, testimonials, posts, policies, and CTA text',
-          'Analytics and tracking for page views, CTA clicks, forms, and calculator interactions',
-          'Lead capture automation and source tracking',
-          'Easy page expansion without redesigning the whole system',
+          'CMS-driven updates for pages, testimonials, blog posts, policies, and FAQ items',
+          'Form tracking, CTA tracking, and source tracking',
+          'Calculator rules and pricing updates',
+          'Automation and CRM handoff later',
         ],
       },
     ],
   },
   'insurance-leads': {
     slug: '/insurance-leads',
-    eyebrow: 'Insurance lead generation',
-    title: 'Insurance lead generation pages built to rank, explain the offer clearly, and move buyers toward a quote or call.',
+    eyebrow: 'Insurance leads',
+    title: 'Insurance lead generation for agents and agencies that need better pipeline quality and clearer buying paths.',
     summary:
-      'This is the broad commercial page for agents and agencies who want more lead flow, better trust signals, and cleaner sales messaging around insurance leads.',
+      'This is the broad commercial page for insurance lead demand, with deeper routes for specific lead categories and higher-intent buyer questions.',
     primaryCta: { label: 'Start pricing', href: '/lead-calculator' },
     secondaryCta: { label: 'Book a strategy call', href: '/book-a-call' },
     sections: [
       {
         kind: 'cards',
-        title: 'Lead pages in the system',
+        title: 'Lead types in the system',
         items: [
-          { title: 'Final expense leads', text: 'Built for direct-response intent, replacement concerns, and cost clarity.' },
-          { title: 'Mortgage protection leads', text: 'Focused on homeowner demand, qualification, and fast follow-up.' },
-          { title: 'IUL leads', text: 'Positioned with stronger trust, education, and a more premium page tone.' },
-          { title: 'Annuity leads', text: 'Structured for retirement-focused search and higher-trust conversion paths.' },
-          { title: 'Medicare leads', text: 'Clear commercial page for Medicare traffic, seasonality, and buyer questions.' },
-          { title: 'ACA and life insurance leads', text: 'Search-friendly pages that explain fit, expectations, and next steps quickly.' },
+          { title: 'Final expense leads', text: 'Built for buyers who care about cost clarity, quality expectations, and follow-up speed.' },
+          { title: 'Mortgage protection leads', text: 'Positioned around homeowner fit, qualification, and cleaner next steps.' },
+          { title: 'IUL leads', text: 'Framed with stronger trust and a more premium sales tone.' },
+          { title: 'Annuity leads', text: 'Structured for retirement-focused demand and higher-trust conversations.' },
+          { title: 'Medicare leads', text: 'Supported by proof, service expectations, and direct next-step clarity.' },
+          { title: 'ACA, life, and exclusive leads', text: 'Broader commercial routes that help buyers compare demand types and move toward a quote.' },
         ],
       },
       {
-        kind: 'list',
-        title: 'Why this page matters',
+        kind: 'faq',
+        title: 'Insurance lead FAQ',
         items: [
-          'Clarifies what kinds of insurance lead services are available',
-          'Creates internal links into each lead-type page',
-          'Supports SEO for broad lead-generation terms',
-          'Moves visitors toward pricing, proof, and direct contact',
+          { question: 'Who is this page for?', answer: 'Insurance agents, agency owners, and sales teams evaluating lead options and trying to understand fit quickly.' },
+          { question: 'What should this page do well?', answer: 'Explain the offer clearly, connect into deeper lead-type pages, and move visitors toward pricing, proof, or a call.' },
         ],
       },
     ],
   },
   'final-expense-leads': {
     slug: '/final-expense-leads',
-    eyebrow: 'Lead type page',
-    title: 'Final expense leads for agents who need a clearer offer, stronger trust, and a cleaner buying path.',
+    eyebrow: 'Lead type',
+    title: 'Final expense leads for teams that want clearer expectations, stronger trust, and cleaner pricing conversations.',
     summary:
-      'This page should answer what the leads are, who they fit, and why the buying experience feels more credible than a generic list-seller page.',
+      'This page should answer what the lead type is, who it fits, and why the buying experience feels more credible than a vague marketplace pitch.',
     primaryCta: { label: 'See pricing options', href: '/pricing' },
     secondaryCta: { label: 'Book a strategy call', href: '/book-a-call' },
     sections: [
-      { kind: 'cards', title: 'What this page should cover', items: [
-        { title: 'Lead quality', text: 'Explain intent level, form detail, and what makes the lead valuable.' },
+      { kind: 'cards', title: 'What buyers care about', items: [
+        { title: 'Lead quality', text: 'Explain intent level, routing, and what makes the lead useful in practice.' },
         { title: 'Replacement clarity', text: 'Set expectations around invalid records and replacement terms.' },
-        { title: 'Follow-up timing', text: 'Show why speed and trust matter after delivery.' },
-      ] },
-      { kind: 'faq', title: 'Final expense FAQ', items: [
-        { question: 'What makes the page convert better?', answer: 'It answers fit, credibility, and pricing direction quickly instead of hiding the real questions buyers have.' },
-        { question: 'Should pricing be visible?', answer: 'Pricing should be guided, clear enough to qualify interest, and supported by a call or calculator next step.' },
+        { title: 'Follow-up timing', text: 'Show why speed and process matter after delivery.' },
       ] },
     ],
   },
   'mortgage-protection-leads': {
     slug: '/mortgage-protection-leads',
-    eyebrow: 'Lead type page',
-    title: 'Mortgage protection leads positioned with clearer trust, qualification logic, and a stronger conversion path.',
+    eyebrow: 'Lead type',
+    title: 'Mortgage protection leads positioned with clearer trust, qualification logic, and a stronger path to inquiry.',
     summary:
-      'This page exists for search visibility and sales clarity, helping buyers understand what they are getting and why the process feels more reliable.',
+      'This page should make the offer and fit obvious quickly while helping buyers understand what kind of conversation they are paying for.',
     primaryCta: { label: 'Start pricing', href: '/lead-calculator' },
     secondaryCta: { label: 'View testimonials', href: '/testimonials' },
     sections: [
-      { kind: 'list', title: 'Mortgage protection page needs', items: [
+      { kind: 'list', title: 'Mortgage protection priorities', items: [
         'Audience fit and targeting clarity',
         'Lead qualification explanation',
         'Fast follow-up expectations',
-        'Trust-building FAQ and proof',
+        'A clear next step toward pricing or contact',
       ] },
     ],
   },
   'iul-leads': {
     slug: '/iul-leads',
-    eyebrow: 'Lead type page',
-    title: 'IUL leads presented with a more premium, trust-heavy page structure for serious insurance buyers.',
+    eyebrow: 'Lead type',
+    title: 'IUL leads presented with stronger trust, cleaner explanation, and a more premium sales posture.',
     summary:
-      'The page should feel informed and credible, not aggressive, because the audience usually needs more explanation and confidence before action.',
+      'The audience for this page usually needs more confidence and context before taking action, so the page should feel informed and established.',
     primaryCta: { label: 'Book a strategy call', href: '/book-a-call' },
     sections: [
       { kind: 'cards', title: 'IUL page priorities', items: [
-        { title: 'Education-led trust', text: 'Explain the lead flow and fit without sounding vague or pushy.' },
-        { title: 'Premium tone', text: 'Use stronger design and cleaner hierarchy to support a higher-trust offer.' },
-        { title: 'Proof and next step', text: 'Pair better page education with pricing or call options.' },
+        { title: 'Education-led trust', text: 'Explain the lead flow and fit without sounding pushy.' },
+        { title: 'Premium tone', text: 'Use stronger hierarchy and cleaner proof.' },
+        { title: 'Proof and next step', text: 'Pair page clarity with direct pricing or call options.' },
       ] },
     ],
   },
   'annuity-leads': {
     slug: '/annuity-leads',
-    eyebrow: 'Lead type page',
-    title: 'Annuity leads for retirement-focused buyers who need clarity, trust, and a more established online impression.',
+    eyebrow: 'Lead type',
+    title: 'Annuity leads for retirement-focused buyers who need clarity, trust, and a stronger buying path.',
     summary:
-      'This page should support annuity search intent while making the offer feel professional, stable, and well explained.',
+      'This page should make the offer feel stable, professional, and well explained for a higher-trust audience.',
     primaryCta: { label: 'Request pricing', href: '/pricing' },
     sections: [
       { kind: 'list', title: 'Annuity page priorities', items: [
-        'Retirement-focused messaging',
-        'Clear explanation of who the leads fit',
+        'Retirement-focused positioning',
+        'Clear explanation of fit',
         'Proof and credibility signals',
         'A strong CTA toward quote or call',
       ] },
@@ -183,10 +176,10 @@ export const pages: Record<string, PageContent> = {
   },
   'medicare-leads': {
     slug: '/medicare-leads',
-    eyebrow: 'Lead type page',
-    title: 'Medicare leads with a cleaner commercial page for seasonal demand, trust concerns, and buyer questions.',
+    eyebrow: 'Lead type',
+    title: 'Medicare leads with clearer service language, stronger proof, and cleaner next-step guidance.',
     summary:
-      'The page should work for SEO and conversion by making the service understandable quickly and pairing it with proof and next-step clarity.',
+      'The page should answer the biggest buyer questions quickly and help them move toward proof, pricing, or a call without confusion.',
     primaryCta: { label: 'View proof', href: '/testimonials' },
     secondaryCta: { label: 'Book a strategy call', href: '/book-a-call' },
     sections: [
@@ -200,79 +193,73 @@ export const pages: Record<string, PageContent> = {
   },
   'aca-leads': {
     slug: '/aca-leads',
-    eyebrow: 'Lead type page',
-    title: 'ACA leads with clearer service language, commercial SEO structure, and a stronger path to inquiry.',
+    eyebrow: 'Lead type',
+    title: 'ACA leads with clearer offer language and a stronger path to inquiry.',
     summary:
       'This page should explain the audience, the lead type, and the next step in a clean way that reduces confusion and improves trust.',
     primaryCta: { label: 'Start pricing', href: '/lead-calculator' },
     sections: [
       { kind: 'list', title: 'ACA page priorities', items: [
         'Clear explanation of the offer',
-        'Search-friendly structure and headings',
         'Proof and FAQ support',
+        'Qualification expectations',
         'A strong CTA toward quote or call',
       ] },
     ],
   },
   'life-insurance-leads': {
     slug: '/life-insurance-leads',
-    eyebrow: 'Lead type page',
-    title: 'Life insurance leads supported by premium sales copy, stronger proof, and a cleaner route to pricing or inquiry.',
+    eyebrow: 'Lead type',
+    title: 'Life insurance leads supported by stronger proof, clearer expectations, and a cleaner route to pricing or contact.',
     summary:
-      'This page should cover broad life insurance lead demand and connect that search traffic into the rest of the Upthrive lead-generation system.',
+      'This page should cover broad life insurance lead demand and connect buyers into the rest of the Upthrive lead-generation system.',
     primaryCta: { label: 'Request pricing', href: '/pricing' },
     secondaryCta: { label: 'See all lead types', href: '/insurance-leads' },
     sections: [
-      { kind: 'cards', title: 'What the life insurance leads page should do', items: [
-        { title: 'Capture broad search demand', text: 'Rank for wider life insurance lead terms without feeling generic.' },
+      { kind: 'cards', title: 'What this page should do', items: [
+        { title: 'Capture broad demand', text: 'Speak to wider life insurance lead interest without sounding generic.' },
         { title: 'Explain the offer fast', text: 'Make fit, quality, and next-step expectations obvious quickly.' },
-        { title: 'Link to deeper pages', text: 'Support internal SEO and discovery into more specific lead categories.' },
+        { title: 'Link to deeper routes', text: 'Support discovery into more specific lead categories.' },
       ] },
     ],
   },
   'exclusive-leads': {
     slug: '/exclusive-leads',
-    eyebrow: 'Lead type page',
-    title: 'Exclusive leads explained with stronger credibility, clearer expectations, and a more premium buying experience.',
+    eyebrow: 'Lead type',
+    title: 'Exclusive leads explained with stronger credibility and clearer expectations.',
     summary:
-      'This page should handle one of the biggest buying questions directly: what makes exclusive leads different, and why should the visitor trust the offer.',
+      'This page should handle a major buying question directly: what makes exclusive leads different, and why should the buyer trust the offer.',
     primaryCta: { label: 'Book a strategy call', href: '/book-a-call' },
     sections: [
       { kind: 'faq', title: 'Exclusive lead FAQ', items: [
         { question: 'What should this page make clear fast?', answer: 'How exclusivity works, what buyers should expect, and why the process feels more trustworthy than a vague lead marketplace.' },
-        { question: 'Why is this page useful for SEO?', answer: 'It targets a high-intent term and helps qualify visitors who are specifically comparing lead types.' },
+        { question: 'Why does this page matter?', answer: 'It qualifies visitors who are actively comparing lead types and want a clearer buying path.' },
       ] },
     ],
   },
   'insurance-recruiting-leads': {
     slug: '/insurance-recruiting-leads',
     eyebrow: 'Recruiting hub',
-    title: 'Insurance recruiting pages for agency owners who need better candidate flow, better trust, and cleaner appointment paths.',
+    title: 'Insurance recruiting campaigns for agency owners who need better candidate flow and cleaner appointment paths.',
     summary:
-      'This section should support recruiting SEO, explain the offer clearly, and move agency owners toward a call, quote, or appointment-setting discussion.',
+      'This section should explain the recruiting offer clearly and move agency owners toward a call, quote request, or recruiting appointment-setting conversation.',
     primaryCta: { label: 'Book a strategy call', href: '/book-a-call' },
     secondaryCta: { label: 'View recruiting pages', href: '/agency-growth' },
     sections: [
       { kind: 'cards', title: 'Recruiting page set', items: [
-        { title: 'Recruiting appointment setting', text: 'A page for booked interviews and cleaner recruiting follow-up systems.' },
-        { title: 'Agency growth', text: 'A page for owners focused on team building and recruiting momentum.' },
-        { title: '1099 agent recruiting', text: 'A dedicated page for independent-contractor recruiting search intent.' },
-        { title: 'Insurance recruiting leads', text: 'The broad page that explains the category and links to the deeper routes.' },
-      ] },
-      { kind: 'list', title: 'Why recruiting pages matter', items: [
-        'Explain the recruiting offer clearly',
-        'Support search for recruiting-related terms',
-        'Push serious agency owners toward calls or quote requests',
-        'Show proof and process instead of vague agency language',
+        { title: 'Recruiting appointment setting', text: 'Booked interviews and cleaner recruiting follow-up systems.' },
+        { title: 'Agency growth', text: 'A page for owners focused on team growth and recruiting momentum.' },
+        { title: '1099 agent recruiting', text: 'A dedicated route for independent-contractor recruiting demand.' },
+        { title: 'Insurance recruiting campaigns', text: 'The broad page that explains the category and links to the deeper routes.' },
       ] },
     ],
   },
   'recruiting-appointment-setting': {
     slug: '/recruiting-appointment-setting',
-    eyebrow: 'Recruiting service page',
-    title: 'Recruiting appointment setting for agencies that need more candidate conversations, not just more traffic.',
+    eyebrow: 'Recruiting service',
+    title: 'Recruiting appointment setting for agencies that need more candidate conversations, not just more interest.',
     summary:
-      'This page should explain how Upthrive can support candidate flow after interest is generated and help agencies book more real recruiting conversations.',
+      'This page should explain how better booking support helps agencies turn candidate flow into real recruiting conversations.',
     primaryCta: { label: 'Book a strategy call', href: '/book-a-call' },
     sections: [
       { kind: 'list', title: 'Page priorities', items: [
@@ -285,10 +272,10 @@ export const pages: Record<string, PageContent> = {
   },
   'agency-growth': {
     slug: '/agency-growth',
-    eyebrow: 'Recruiting service page',
-    title: 'Agency growth pages that connect recruiting, trust, and booked conversations into one clearer sales system.',
+    eyebrow: 'Recruiting service',
+    title: 'Agency growth support that connects recruiting, trust, and booked conversations into one clearer growth system.',
     summary:
-      'This page should speak to agency owners who are trying to grow headcount and need a better online recruiting and lead-generation presence.',
+      'This page should speak to owners who are trying to grow headcount and need a stronger recruiting offer and cleaner candidate path.',
     primaryCta: { label: 'View recruiting proof', href: '/testimonials' },
     secondaryCta: { label: 'Book a strategy call', href: '/book-a-call' },
     sections: [
@@ -301,32 +288,32 @@ export const pages: Record<string, PageContent> = {
   },
   '1099-agent-recruiting': {
     slug: '/1099-agent-recruiting',
-    eyebrow: 'Recruiting service page',
-    title: '1099 agent recruiting pages that explain the offer clearly and help agency owners attract better-fit candidates.',
+    eyebrow: 'Recruiting service',
+    title: '1099 agent recruiting that helps agency owners attract better-fit candidates and book more conversations.',
     summary:
-      'This page should support recruiting SEO while making the path from traffic to booked recruiting call feel more direct and credible.',
+      'This page should make the audience, opportunity, and next step obvious quickly for owners hiring independent agents.',
     primaryCta: { label: 'Book a strategy call', href: '/book-a-call' },
     sections: [
       { kind: 'list', title: '1099 recruiting page priorities', items: [
-        'Search-friendly recruiting structure',
         'Clear fit and audience language',
         'Proof and process explanation',
         'A stronger route to call or contact',
+        'Booked-conversation focus',
       ] },
     ],
   },
   'appointment-setting': {
     slug: '/appointment-setting',
-    eyebrow: 'Core service page',
-    title: 'Appointment setting pages that explain the service clearly and show how it supports lead generation and recruiting outcomes.',
+    eyebrow: 'Core service',
+    title: 'Appointment setting that helps turn demand into more real conversations.',
     summary:
-      'This page is for visitors who need help turning interest into more booked conversations, whether the goal is client acquisition or recruiting.',
+      'This page is for visitors who need help moving lead or recruiting interest into booked calls with better follow-up and less drop-off.',
     primaryCta: { label: 'Start pricing', href: '/lead-calculator' },
     secondaryCta: { label: 'Book a strategy call', href: '/book-a-call' },
     sections: [
       { kind: 'cards', title: 'What appointment setting should communicate', items: [
         { title: 'Booked-call focus', text: 'The service exists to create more real conversations, not vanity metrics.' },
-        { title: 'Lead follow-up support', text: 'It fits naturally into the broader lead and recruiting system.' },
+        { title: 'Lead follow-up support', text: 'It fits naturally into broader lead and recruiting systems.' },
         { title: 'Sales readiness', text: 'The page should attract people who are serious enough to keep moving.' },
       ] },
     ],
@@ -334,33 +321,33 @@ export const pages: Record<string, PageContent> = {
   pricing: {
     slug: '/pricing',
     eyebrow: 'Pricing and scope',
-    title: 'Pricing pages that help insurance buyers estimate fit, understand scope, and keep moving toward a quote or call.',
+    title: 'Pricing pages that help buyers estimate fit, understand scope, and move toward a quote or call.',
     summary:
-      'Pricing visibility matters because it reduces uncertainty. Upthrive uses premium pricing pages and calculator flows to help visitors self-qualify without losing momentum.',
+      'Pricing visibility matters because it reduces uncertainty. Upthrive uses stronger pricing pages and estimate flows to help serious buyers self-qualify faster.',
     primaryCta: { label: 'Open the calculator', href: '/lead-calculator' },
     secondaryCta: { label: 'Book a strategy call', href: '/book-a-call' },
     sections: [
       { kind: 'cards', title: 'What affects pricing', items: [
-        { title: 'Lead type or service', text: 'Insurance leads, recruiting support, and appointment setting all change the engagement shape.' },
-        { title: 'Volume and geography', text: 'Quantity, target states, and routing logic influence pricing and complexity.' },
-        { title: 'Add-ons', text: 'Proof systems, content depth, follow-up paths, and booking logic all affect scope.' },
-        { title: 'Future systems', text: 'Analytics, CMS, automation, and deeper CRM flows can be staged in later.' },
+        { title: 'Lead type or service', text: 'Insurance leads, recruiting support, and appointment setting all scope differently.' },
+        { title: 'Volume and geography', text: 'Quantity, target states, and routing complexity influence pricing and operations.' },
+        { title: 'Add-ons', text: 'Proof systems, follow-up support, and additional services affect scope.' },
+        { title: 'Future systems', text: 'Tracking, automation, and deeper handoff logic can be staged in later.' },
       ] },
-      { kind: 'callout', title: 'Need a fast estimate before a call?', description: 'Use the calculator flow to get directional pricing and then move into a quote or strategy conversation.', ctaLabel: 'Open the calculator', ctaHref: '/lead-calculator' },
+      { kind: 'callout', title: 'Need a fast estimate before a call?', description: 'Use the calculator to get directional pricing and then move into a quote or strategy conversation.', ctaLabel: 'Open the calculator', ctaHref: '/lead-calculator' },
     ],
   },
   'lead-calculator': {
     slug: '/lead-calculator',
     eyebrow: 'Calculator',
-    title: 'A mobile-friendly pricing calculator that helps buyers estimate cost, compare options, and move toward a quote or booked call.',
+    title: 'A mobile-friendly pricing calculator that helps buyers estimate cost and keep moving toward a quote or booked call.',
     summary:
-      'This page should feel stronger than a spreadsheet. It needs clear selections, visual hierarchy, estimate logic, add-on support, and a strong next-step CTA.',
+      'This page should feel stronger than a spreadsheet. It needs clear selections, estimate logic, add-on support, and a direct next-step CTA.',
     primaryCta: { label: 'Book a strategy call', href: '/book-a-call' },
     secondaryCta: { label: 'Contact Upthrive', href: '/contact' },
     sections: [
       { kind: 'list', title: 'Calculator requirements', items: [
         'Lead cost and total estimate visibility',
-        'Add-on options and quantity tiers',
+        'Add-on options and volume tiers',
         'State or geography selection',
         'A clear route to quote request or booked call',
       ] },
@@ -368,21 +355,17 @@ export const pages: Record<string, PageContent> = {
   },
   testimonials: {
     slug: '/testimonials',
-    eyebrow: 'Proof and testimonials',
-    title: 'Proof blocks that reduce skepticism and make Upthrive feel more legitimate, premium, and trustworthy.',
+    eyebrow: 'Proof',
+    title: 'Proof that reduces skepticism and makes Upthrive feel more legitimate, premium, and trustworthy.',
     summary:
-      'This page should support written testimonials, screenshot proof, video proof, case-study structure, and optional client logos over time.',
+      'This page should support written testimonials, screenshot proof, video proof, case-study structure, and optional logos over time.',
     primaryCta: { label: 'Book a strategy call', href: '/book-a-call' },
     sections: [
-      { kind: 'cards', title: 'Proof formats the site should support', items: [
+      { kind: 'cards', title: 'Proof formats the system should support', items: [
         { title: 'Written testimonials', text: 'Short quotes that reinforce lead quality, trust, and booked-call outcomes.' },
-        { title: 'Screenshot proof', text: 'Simple visual evidence that supports claims without turning the page into clutter.' },
-        { title: 'Video testimonials', text: 'Stronger proof blocks that can sit on the page or in case-study style sections.' },
-        { title: 'Case studies', text: 'Narrative proof for visitors who need more context before they believe the value.' },
-      ] },
-      { kind: 'faq', title: 'Proof FAQ', items: [
-        { question: 'What should proof do on this site?', answer: 'Make the business feel more credible, reduce hesitation, and support a stronger next-step decision.' },
-        { question: 'Why have a dedicated testimonials page?', answer: 'It gives cautious buyers a clear place to validate claims without forcing all proof into the homepage.' },
+        { title: 'Screenshot proof', text: 'Simple visual evidence that supports claims without clutter.' },
+        { title: 'Video testimonials', text: 'Stronger proof blocks for visitors who need more confidence.' },
+        { title: 'Case studies', text: 'Narrative proof for visitors who want more context before they believe the value.' },
       ] },
     ],
   },
@@ -391,21 +374,21 @@ export const pages: Record<string, PageContent> = {
     eyebrow: 'About Upthrive',
     title: 'A clearer story for why Upthrive exists and who it helps in the insurance space.',
     summary:
-      'The about page should humanize the brand, make the positioning feel intentional, and explain why the system is built around trust, SEO structure, and conversion.',
+      'The about page should humanize the brand, explain the focus on insurance growth, and show why the company is built around leads, recruiting, booked calls, pricing clarity, and trust.',
     primaryCta: { label: 'Book a strategy call', href: '/book-a-call' },
     sections: [
       { kind: 'list', title: 'What the about page should cover', items: [
         'Why Upthrive focuses on insurance agents and agency owners',
-        'Why SEO and conversion need to work together',
-        'How proof, pricing, and trust shape the site strategy',
-        'Why the platform is designed to grow into a bigger content system later',
+        'How lead generation and recruiting fit together',
+        'Why pricing clarity and proof matter',
+        'Why trust-building content supports the sales process',
       ] },
     ],
   },
   contact: {
     slug: '/contact',
-    eyebrow: 'Contact and quote requests',
-    title: 'A contact page that helps serious insurance visitors submit details and move into the right next conversation.',
+    eyebrow: 'Contact',
+    title: 'A contact page built to route serious buyers into the right next conversation.',
     summary:
       'This page should support lead capture for agents, agency owners, and recruiting-focused visitors while staying easy to understand on mobile.',
     primaryCta: { label: 'Book a strategy call', href: '/book-a-call' },
@@ -421,13 +404,13 @@ export const pages: Record<string, PageContent> = {
   'book-a-call': {
     slug: '/book-a-call',
     eyebrow: 'Book a call',
-    title: 'A booking page that helps serious visitors move from interest into a call, quote discussion, or next-step sales conversation.',
+    title: 'A booking page that moves serious visitors into a clearer quote or sales conversation.',
     summary:
-      'This page should feel premium, clear, and direct. It exists to route stronger leads into a conversation without friction.',
+      'This page should qualify service interest, business context, budget direction, target states, and what the current funnel needs to do better.',
     primaryCta: { label: 'Start the call request', href: '/contact' },
     sections: [
       { kind: 'cards', title: 'What the booking flow should qualify', items: [
-        { title: 'Service interest', text: 'Which area the visitor cares about most, from leads to recruiting to pricing.' },
+        { title: 'Service interest', text: 'Which area matters most, from leads to recruiting to pricing.' },
         { title: 'Business context', text: 'Agency size, target states, current funnel, and main challenge.' },
         { title: 'Readiness', text: 'Whether the visitor needs a quick estimate, a call, or a deeper quote conversation.' },
       ] },
@@ -436,34 +419,28 @@ export const pages: Record<string, PageContent> = {
   resources: {
     slug: '/resources',
     eyebrow: 'Resources',
-    title: 'An SEO-ready resources hub for insurance lead generation, recruiting, appointment setting, pricing, and trust-building content.',
+    title: 'A resources hub for insurance lead generation, recruiting, appointment setting, pricing, and trust-building content.',
     summary:
-      'The resources section should support search visibility, internal linking, and future CMS-driven content without forcing a redesign later.',
+      'The resources section should support education, internal linking, and future content growth without becoming fluff.',
     primaryCta: { label: 'Read the blog', href: '/blog' },
     secondaryCta: { label: 'Book a strategy call', href: '/book-a-call' },
     sections: [
       { kind: 'cards', title: 'Content categories to support', items: [
-        { title: 'Insurance lead generation', text: 'Lead quality, buyer questions, and commercial service education.' },
+        { title: 'Insurance lead generation', text: 'Lead quality, buyer questions, and service education.' },
         { title: 'Recruiting campaigns', text: 'How agencies can attract better candidates and improve recruiting follow-up.' },
         { title: 'Appointment setting', text: 'How booked-call systems support both leads and recruiting.' },
-        { title: 'Pricing and calculators', text: 'How to qualify visitors better with stronger estimate and quote flows.' },
-        { title: 'Proof and trust', text: 'How insurance brands build a more credible online presence.' },
+        { title: 'Pricing and calculators', text: 'How to qualify buyers better with stronger estimate and quote flows.' },
+        { title: 'Proof and trust', text: 'How insurance brands build a more credible presence.' },
         { title: 'Legal and compliance', text: 'Supportive content around privacy, replacement, and responsible marketing language.' },
-      ] },
-      { kind: 'list', title: 'Editable content areas later', items: [
-        'Site settings and CTA text',
-        'Service pages and testimonials',
-        'Blog posts and policies',
-        'FAQ items and calculator rules',
       ] },
     ],
   },
   blog: {
     slug: '/blog',
-    eyebrow: 'Blog and SEO content',
-    title: 'A blog structure built to support SEO, internal linking, and stronger sales conversations for insurance-focused services.',
+    eyebrow: 'Blog',
+    title: 'A blog structure built to support trust, education, and stronger sales conversations.',
     summary:
-      'The blog should support the site as a content system, not just as a decorative publishing area. Each post should connect back to service pages and conversion goals.',
+      'Each post should answer real buyer questions clearly and connect visitors back into services, pricing, proof, or contact paths.',
     primaryCta: { label: 'View resources', href: '/resources' },
     secondaryCta: { label: 'Book a strategy call', href: '/book-a-call' },
     sections: [
@@ -472,16 +449,16 @@ export const pages: Record<string, PageContent> = {
         'Recruiting and agency growth',
         'Appointment setting and follow-up',
         'Pricing visibility and estimate flows',
-        'Trust, proof, and website conversion',
+        'Trust, proof, and buyer confidence',
       ] },
     ],
   },
   compliance: {
     slug: '/compliance',
     eyebrow: 'Compliance and trust',
-    title: 'Compliance content that supports trust, reduces confusion, and makes the business look more responsible online.',
+    title: 'Compliance content that supports trust, reduces confusion, and makes the business feel more responsible.',
     summary:
-      'This page should frame compliance as part of a stronger trust system, not as dead legal weight. It helps visitors feel safer about the brand and the next step.',
+      'This page should frame compliance as part of a stronger trust system and help visitors feel safer about the brand and the next step.',
     primaryCta: { label: 'Read the replacement policy', href: '/replacement-policy' },
     secondaryCta: { label: 'Book a strategy call', href: '/book-a-call' },
     sections: [
@@ -498,7 +475,7 @@ export const pages: Record<string, PageContent> = {
     eyebrow: 'Replacement policy',
     title: 'A replacement policy page that sets expectations clearly and helps reduce disputes later.',
     summary:
-      'This route matters because buyers want trust before purchase. A visible policy makes the business feel more legitimate and easier to work with.',
+      'A visible policy makes the business feel more legitimate and easier to work with before purchase.',
     primaryCta: { label: 'View pricing', href: '/pricing' },
     sections: [
       { kind: 'cards', title: 'Policy areas to clarify', items: [
@@ -516,13 +493,13 @@ export const pages: Record<string, PageContent> = {
       'The route should stay in place now so the public site can launch cleanly and receive final legal content later without changing structure.',
     primaryCta: { label: 'Contact Upthrive', href: '/contact' },
     sections: [
-      { kind: 'list', title: 'Privacy topics to finalize', items: ['What data is collected', 'How the data is used', 'Third-party tools and embeds', 'User rights', 'How to contact the business'] },
+      { kind: 'list', title: 'Privacy topics to finalize', items: ['What data is collected', 'How the data is used', 'Third-party tools', 'User rights', 'How to contact the business'] },
     ],
   },
   terms: {
     slug: '/terms',
     eyebrow: 'Terms',
-    title: 'A terms page route ready for final legal and service language.',
+    title: 'A terms route ready for final legal and service language.',
     summary:
       'This route keeps the legal structure complete while detailed terms are finalized later.',
     primaryCta: { label: 'Contact Upthrive', href: '/contact' },
@@ -535,7 +512,7 @@ export const pages: Record<string, PageContent> = {
     eyebrow: 'Cookie policy',
     title: 'A cookie policy route ready for final consent and tracking language.',
     summary:
-      'This route supports launch completeness now and can be updated later once the exact analytics and tracking stack is finalized.',
+      'This route supports launch completeness now and can be updated later once the exact tracking stack is finalized.',
     primaryCta: { label: 'View privacy policy', href: '/privacy-policy' },
     sections: [
       { kind: 'list', title: 'Cookie topics to finalize', items: ['Necessary cookies', 'Analytics cookies', 'Marketing cookies', 'Consent controls', 'How to change settings later'] },

@@ -6,63 +6,63 @@ const audience = [
   'Insurance agents',
   'Agency owners',
   'Recruiters for insurance teams',
-  'Sales managers and marketers in insurance',
+  'Sales managers in insurance',
 ];
 
 const serviceCards = [
   {
     title: 'Insurance lead generation',
-    text: 'SEO-first service pages and lead funnels that explain the offer fast and move visitors toward inquiry.',
+    text: 'Lead offers for final expense, mortgage protection, IUL, annuity, Medicare, ACA, life, and exclusive demand.',
   },
   {
     title: 'Recruiting campaigns',
-    text: 'Dedicated recruiting routes for agency owners who need more candidate flow and better-fit applicants.',
+    text: 'Support for agency growth, 1099 recruiting, and cleaner candidate flow.',
   },
   {
     title: 'Appointment setting',
-    text: 'Booked-call support pages that connect traffic, follow-up, and stronger conversation flow.',
+    text: 'Booked-call support that helps turn interest into real sales or recruiting conversations.',
   },
   {
-    title: 'Pricing and calculator flow',
-    text: 'Estimate and quote pages that help visitors self-qualify without losing momentum.',
+    title: 'Pricing visibility',
+    text: 'Estimate and quote flows that help buyers self-qualify without stalling out.',
   },
   {
-    title: 'Proof and trust-building',
-    text: 'Testimonials, screenshot proof, legal pages, and stronger credibility systems across the site.',
+    title: 'Proof and trust',
+    text: 'Testimonials, compliance pages, replacement policy, and credibility systems that reduce skepticism.',
   },
   {
-    title: 'Blog and resources',
-    text: 'Content architecture for SEO topics that support services, internal linking, and future CMS editing.',
+    title: 'Resources and content',
+    text: 'Blog and resource structure that supports buyer education and stronger conversations.',
   },
 ];
 
 const pageMap = [
-  { title: 'Insurance Leads', href: '/insurance-leads', text: 'Broad lead generation hub with internal routes for final expense, mortgage protection, IUL, annuity, Medicare, ACA, life, and exclusive leads.' },
-  { title: 'Recruiting', href: '/insurance-recruiting-leads', text: 'Recruiting hub for agency growth, 1099 recruiting, and recruiting appointment setting pages.' },
-  { title: 'Pricing', href: '/pricing', text: 'Pricing visibility and qualification pages that reduce uncertainty and support quote-ready conversations.' },
-  { title: 'Resources', href: '/resources', text: 'SEO-ready content structure for blogs, FAQs, trust pages, and future proof or case-study content.' },
+  { title: 'Insurance Leads', href: '/insurance-leads', text: 'Broad lead-generation hub with routes for final expense, mortgage protection, IUL, annuity, Medicare, ACA, life, and exclusive leads.' },
+  { title: 'Recruiting', href: '/insurance-recruiting-leads', text: 'Recruiting hub for agency growth, 1099 recruiting, and recruiting appointment-setting support.' },
+  { title: 'Pricing', href: '/pricing', text: 'Pricing visibility and estimate flows that reduce uncertainty and help serious buyers keep moving.' },
+  { title: 'Proof', href: '/testimonials', text: 'Testimonials, screenshot proof, and trust content that help the offer feel more credible.' },
 ];
 
 const faq = [
   {
-    question: 'What is Upthrive actually building?',
+    question: 'What does Upthrive actually do?',
     answer:
-      'A premium SEO-first website system for insurance agents and agency owners, with service pages, recruiting pages, pricing support, trust-building content, legal routes, and future CMS readiness.',
+      'Upthrive helps insurance agents and agency owners generate more leads, attract better candidates, improve booked-call flow, and make the offer easier to trust.',
   },
   {
-    question: 'Is this only for lead generation?',
+    question: 'Is this only about leads?',
     answer:
-      'No. Lead generation is one major part of the system, but the site also supports recruiting campaigns, appointment setting, pricing visibility, testimonials, blog content, and trust pages.',
+      'No. Lead generation is a major part of the offer, but the system also supports recruiting campaigns, appointment setting, pricing visibility, proof, and trust-building content.',
   },
   {
-    question: 'Why does the site need so many page types?',
+    question: 'Why are there so many page types?',
     answer:
-      'Because the website is meant to rank, explain multiple offers clearly, support future content growth, and move different kinds of visitors toward the right next step.',
+      'Because different visitors need different answers. Some are comparing lead types, some care about recruiting, some want pricing, and some need proof before they ever reach out.',
   },
   {
-    question: 'Can the site be edited later without a rebuild?',
+    question: 'Can this grow later without rebuilding everything?',
     answer:
-      'Yes. The structure is designed so pages, services, policies, testimonials, blog posts, FAQ items, and calculator rules can be moved into a CMS later.',
+      'Yes. The structure is built so services, testimonials, pricing logic, policies, blog posts, and FAQ items can expand over time without starting over.',
   },
 ];
 
@@ -72,9 +72,9 @@ const jsonLd = {
   name: 'Upthrive',
   url: 'https://upthrive-solutions.com',
   description:
-    'Upthrive builds premium SEO-first websites, lead generation pages, recruiting funnels, pricing flows, and trust systems for insurance agents and agency owners.',
+    'Upthrive helps insurance agents and agency owners generate more leads, attract better candidates, book more conversations, and build more trust with serious buyers.',
   areaServed: 'United States',
-  serviceType: ['Insurance lead generation', 'Insurance recruiting campaigns', 'Appointment setting', 'Pricing and calculator systems'],
+  serviceType: ['Insurance lead generation', 'Recruiting campaigns', 'Appointment setting', 'Pricing visibility'],
 };
 
 export default function HomePage() {
@@ -86,16 +86,16 @@ export default function HomePage() {
         <div className="section-shell grid min-h-[100dvh] gap-14 py-20 lg:grid-cols-[0.96fr_1.04fr] lg:items-center lg:py-24">
           <div>
             <Reveal>
-              <p className="kicker text-[#EFE9B8]/64">Premium SEO-first insurance growth platform</p>
+              <p className="kicker text-[#EFE9B8]/64">Insurance growth for agents and agencies</p>
             </Reveal>
             <Reveal delay={0.06}>
               <h1 className="home-headline mt-4 max-w-[11ch] font-heading text-[#EFE9B8]">
-                Pages that rank, convert, and book more calls.
+                More leads. Better candidates. More booked calls.
               </h1>
             </Reveal>
             <Reveal delay={0.12}>
               <p className="mt-6 max-w-xl text-base leading-8 text-[#EFE9B8]/78 sm:text-lg">
-                Upthrive helps insurance agents and agency owners look more legitimate online, explain services clearly, and turn traffic into lead inquiries, quote requests, and booked conversations.
+                Upthrive helps insurance teams create more pipeline, improve recruiting flow, and make the next sales conversation easier to trust.
               </p>
             </Reveal>
             <Reveal delay={0.16}>
@@ -131,9 +131,9 @@ export default function HomePage() {
           <Reveal>
             <div>
               <p className="kicker text-[#382A51]/68">Who it is for</p>
-              <h2 className="section-title mt-4 max-w-[10ch] font-heading text-[#000100]">Built for insurance businesses that need more than a brochure site.</h2>
+              <h2 className="section-title mt-4 max-w-[10ch] font-heading text-[#000100]">Built for insurance businesses that need more growth, not more noise.</h2>
               <p className="mt-5 max-w-md text-base leading-8 text-[#000100]/72">
-                The site is meant to support sales and content goals at the same time, so visitors understand the offer quickly and the business can grow without rebuilding the structure later.
+                The system is structured around the real things teams ask for: better lead flow, stronger recruiting, clearer pricing, more proof, and more real conversations.
               </p>
             </div>
           </Reveal>
@@ -157,7 +157,7 @@ export default function HomePage() {
         <div className="section-shell">
           <Reveal>
             <p className="kicker text-[#382A51]/68">Service overview</p>
-            <h2 className="section-title mt-4 max-w-[10ch] font-heading text-[#000100]">A sales and content system, not just a homepage redesign.</h2>
+            <h2 className="section-title mt-4 max-w-[10ch] font-heading text-[#000100]">A growth system built around leads, recruiting, pricing, and trust.</h2>
           </Reveal>
 
           <div className="mt-10 grid gap-4 md:grid-cols-2 xl:grid-cols-3">
@@ -182,10 +182,10 @@ export default function HomePage() {
             <div className="rounded-[34px] border border-white/10 bg-white/6 p-8 backdrop-blur-sm">
               <p className="kicker text-[#EFE9B8]/58">Trust and proof</p>
               <h2 className="mt-4 max-w-[10ch] font-heading text-[clamp(2.8rem,5vw,5rem)] leading-[0.95] text-[#EFE9B8]">
-                The site has to look legitimate in under 10 seconds.
+                The offer has to feel legitimate in under 10 seconds.
               </h2>
               <p className="mt-5 max-w-2xl text-base leading-8 text-[#EFE9B8]/76">
-                That means stronger hierarchy, cleaner proof blocks, better CTA placement, legal routes, and content structure that feels established instead of improvised.
+                That means stronger proof, cleaner CTA placement, compliance support, pricing clarity, and a sales path that feels easier to trust.
               </p>
             </div>
           </Reveal>
@@ -210,7 +210,7 @@ export default function HomePage() {
         <div className="section-shell">
           <Reveal>
             <p className="kicker text-[#382A51]/68">Core page map</p>
-            <h2 className="section-title mt-4 max-w-[10ch] font-heading text-[#000100]">The site needs real depth so visitors can find the right path fast.</h2>
+            <h2 className="section-title mt-4 max-w-[10ch] font-heading text-[#000100]">Different buyers need different answers fast.</h2>
           </Reveal>
 
           <div className="mt-10 grid gap-4 lg:grid-cols-2">
@@ -238,7 +238,7 @@ export default function HomePage() {
           <Reveal>
             <div>
               <p className="kicker text-[#382A51]/68">Pricing and calculator</p>
-              <h2 className="section-title mt-4 max-w-[10ch] font-heading text-[#000100]">Let visitors estimate fit before they disappear.</h2>
+              <h2 className="section-title mt-4 max-w-[10ch] font-heading text-[#000100]">Let buyers estimate fit before they disappear.</h2>
               <p className="mt-5 max-w-xl text-base leading-8 text-[#000100]/72">
                 A stronger pricing and calculator flow helps buyers qualify themselves, compare options, and move toward a quote or strategy call with less hesitation.
               </p>
@@ -272,7 +272,7 @@ export default function HomePage() {
         <div className="section-shell">
           <Reveal>
             <p className="kicker text-[#382A51]/68">FAQ</p>
-            <h2 className="section-title mt-4 max-w-[8ch] font-heading text-[#000100]">The working source of truth, turned into pages.</h2>
+            <h2 className="section-title mt-4 max-w-[8ch] font-heading text-[#000100]">Clear answers for serious buyers.</h2>
           </Reveal>
 
           <div className="mt-10 space-y-3">
@@ -296,10 +296,10 @@ export default function HomePage() {
             <div className="rounded-[36px] border border-white/10 bg-white/6 px-6 py-10 text-center backdrop-blur-sm lg:px-10 lg:py-14">
               <p className="kicker text-[#EFE9B8]/58">Final CTA</p>
               <h2 className="mx-auto mt-4 max-w-[11ch] font-heading text-[clamp(2.8rem,5vw,5.2rem)] leading-[0.95]">
-                Make Upthrive feel premium, clear, and ready to sell.
+                Build more pipeline and make the next call easier to win.
               </h2>
               <p className="mx-auto mt-5 max-w-2xl text-base leading-8 text-[#EFE9B8]/76 sm:text-lg">
-                If the goal is a premium insurance website that ranks, explains the offer clearly, and drives better conversations, this is the structure built to do it.
+                Upthrive is built for insurance teams that want more demand, better recruiting flow, stronger proof, and clearer next steps.
               </p>
               <div className="mt-8 flex justify-center gap-3">
                 <Link href="/book-a-call" className="cta-primary px-6 py-3 text-sm">
