@@ -32,8 +32,8 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
         </div>
 
         <div className="mt-8 flex flex-wrap gap-3">
-          <Link href="/resources" className="light-button px-6 py-3 text-sm">
-            Back to resources
+          <Link href="/blog" className="light-button px-6 py-3 text-sm">
+            Back to blog
           </Link>
           <Link href="/book-a-call" className="cta-primary px-6 py-3 text-sm">
             Book a strategy call

@@ -14,12 +14,12 @@ export function SiteShell({ children }: { children: ReactNode }) {
             <span className="leading-tight">
               <span className="block font-heading text-[1.35rem] leading-none text-[#000100]">Upthrive</span>
               <span className="block text-[0.7rem] font-semibold uppercase tracking-[0.18em] text-[#382a51]/72">
-                Websites that sell for insurance agents
+                Premium SEO-first insurance growth
               </span>
             </span>
           </Link>
 
-          <nav className="hidden items-center gap-7 text-sm font-medium text-[#000100]/74 lg:flex">
+          <nav className="hidden items-center gap-6 text-sm font-medium text-[#000100]/74 xl:flex">
             {site.navigation.map((item) => (
               <Link key={item.href} href={item.href} className="transition hover:text-[#000100]">
                 {item.label}
@@ -27,9 +27,34 @@ export function SiteShell({ children }: { children: ReactNode }) {
             ))}
           </nav>
 
-          <Link href={site.primaryCta.href} className="light-button px-4 py-2.5 text-sm lg:px-5">
-            {site.primaryCta.label}
-          </Link>
+          <div className="flex items-center gap-3">
+            <details className="group relative xl:hidden">
+              <summary className="grid h-11 w-11 cursor-pointer list-none place-items-center rounded-2xl border border-black/10 bg-white/65 text-[#000100]">
+                <span className="sr-only">Open menu</span>
+                <div className="space-y-1.5">
+                  <span className="block h-0.5 w-5 rounded-full bg-[#000100]" />
+                  <span className="block h-0.5 w-5 rounded-full bg-[#000100]" />
+                  <span className="block h-0.5 w-5 rounded-full bg-[#000100]" />
+                </div>
+              </summary>
+              <div className="absolute right-0 top-[calc(100%+12px)] w-72 rounded-[28px] border border-black/8 bg-[#fffdf1] p-4 shadow-[0_24px_60px_rgba(23,16,5,0.12)]">
+                <nav className="grid gap-2">
+                  {site.navigation.map((item) => (
+                    <Link key={item.href} href={item.href} className="rounded-2xl px-4 py-3 text-sm font-semibold text-[#000100]/78 transition hover:bg-black/4">
+                      {item.label}
+                    </Link>
+                  ))}
+                </nav>
+                <Link href={site.primaryCta.href} className="cta-primary mt-3 w-full px-4 py-3 text-sm">
+                  {site.primaryCta.label}
+                </Link>
+              </div>
+            </details>
+
+            <Link href={site.primaryCta.href} className="light-button hidden px-4 py-2.5 text-sm sm:inline-flex lg:px-5">
+              {site.primaryCta.label}
+            </Link>
+          </div>
         </div>
       </header>
 
@@ -39,9 +64,9 @@ export function SiteShell({ children }: { children: ReactNode }) {
         <div className="section-shell grid gap-10 py-14 lg:grid-cols-[1.2fr_0.9fr_0.9fr]">
           <div>
             <p className="kicker text-[#efe9b8]/58">Upthrive</p>
-            <h2 className="mt-4 max-w-lg text-4xl leading-[0.98]">Turn your website into a better sales conversation.</h2>
+            <h2 className="mt-4 max-w-lg text-4xl leading-[0.98]">SEO-first pages. Better trust. Stronger calls.</h2>
             <p className="mt-4 max-w-xl text-sm leading-7 text-[#efe9b8]/76">
-              Upthrive helps insurance agents and agency owners build trust online, generate better leads, and turn more traffic into booked calls.
+              Upthrive gives insurance agents and agency owners a premium website system for lead generation, recruiting, appointment setting, pricing visibility, and trust-building content.
             </p>
           </div>
 
@@ -59,7 +84,7 @@ export function SiteShell({ children }: { children: ReactNode }) {
           </div>
 
           <div>
-            <h3 className="kicker text-[#efe9b8]/58">What the site is built around</h3>
+            <h3 className="kicker text-[#efe9b8]/58">What the site is ready for</h3>
             <ul className="mt-5 space-y-3 text-sm leading-7 text-[#efe9b8]/82">
               {site.trustPoints.map((item) => (
                 <li key={item}>{item}</li>

@@ -1,5 +1,11 @@
-import { redirect } from 'next/navigation';
+import { ContentPage } from '@/components/content-page';
+import { pages } from '@/data/pages';
+
+export const metadata = {
+  title: pages['appointment-setting'].title,
+  description: pages['appointment-setting'].summary,
+};
 
 export default function Page() {
-  redirect('/services');
+  return <ContentPage content={pages['appointment-setting']} />;
 }
